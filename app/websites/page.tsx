@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "@/lib/gsap-init";
 import PageHero from "@/components/ui/page-hero";
+import Eyebrow from "@/components/ui/eyebrow";
 import Button from "@/components/ui/button";
 
 const PROJECTS = [

@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "@/lib/gsap-init";
 import PageHero from "@/components/ui/page-hero";
+import ClosingCTA from "@/components/home/closing-cta";
 
 export default function IntelligentBuyingPage() {
   const containerRef = useRef<HTMLDivElement>(null);

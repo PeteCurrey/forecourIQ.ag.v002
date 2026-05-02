@@ -3,6 +3,8 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "@/lib/gsap-init";
 import PageHero from "@/components/ui/page-hero";
+import ClosingCTA from "@/components/home/closing-cta";
+import Eyebrow from "@/components/ui/eyebrow";
 
 export default function AutomatedLeadsPage() {
   const containerRef = useRef<HTMLDivElement>(null);
