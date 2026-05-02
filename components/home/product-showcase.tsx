@@ -126,14 +126,14 @@ export default function ProductShowcase() {
           </div>
 
           {/* Progress Rail */}
-          <div className="hidden lg:flex lg:col-span-1 justify-center relative h-[60vh]">
-            <div className="w-[1px] h-full bg-[#252B37]" />
+          <div className="hidden lg:flex lg:col-span-1 justify-center relative h-[84vh]">
+            <div className="w-[1px] h-full bg-[#252B37] opacity-50" />
             <div className="absolute top-0 flex flex-col justify-between h-full py-0">
               {MODULES.map((_, i) => (
                 <div 
                   key={i}
                   className={`w-2 h-2 border transition-all duration-500 ${
-                    activeModule === i ? 'bg-[#39FF14] border-[#39FF14]' : 'bg-[#0D0F14] border-[#252B37]'
+                    activeModule === i ? 'bg-[#C9A84C] border-[#C9A84C]' : 'bg-[#252B37] border-[#252B37]'
                   }`}
                 />
               ))}
@@ -141,7 +141,7 @@ export default function ProductShowcase() {
           </div>
 
           {/* Right Panel Visual */}
-          <div className="lg:col-span-6 h-[60vh]">
+          <div className="lg:col-span-6 h-[84vh]">
             <div className="relative w-full h-full bg-[#13161C] border border-[#252B37] rounded-[2px] overflow-hidden shadow-2xl">
               {/* Module Visuals */}
               <div className="absolute inset-0 transition-opacity duration-700 p-8" style={{ opacity: activeModule === 0 ? 1 : 0 }}>
@@ -154,8 +154,9 @@ export default function ProductShowcase() {
                   </div>
                   <div className="p-8 space-y-8">
                     <div className="h-4 w-32 bg-[#252B37]" />
-                    <div className="h-40 w-full bg-[#13161C] flex items-center justify-center">
-                      <span className="font-cormorant font-300 italic text-[13px] text-[#5C6678]">Photography coming</span>
+                    <div className="h-40 w-full bg-[#0D0F14] border border-[#1C2029] flex flex-col items-center justify-center gap-3">
+                      <span className="font-mono text-[11px] text-[#252B37] uppercase tracking-[0.16em]">Vehicle Photography · Pending</span>
+                      <div className="w-[60px] h-[1px] bg-[#1C2029]" />
                     </div>
                     <div className="grid grid-cols-3 gap-4">
                       {[1, 2, 3].map(i => (
@@ -171,7 +172,7 @@ export default function ProductShowcase() {
                 <div className="w-full h-full bg-[#0D0F14] border border-[#252B37] rounded-[2px] flex flex-col">
                   <div className="h-12 border-b border-[#252B37] flex items-center px-6 justify-between">
                     <div className="flex gap-4">
-                      <div className="w-16 h-2 bg-[#39FF14]" />
+                      <div className="w-16 h-2 bg-[#C9A84C]" />
                       <div className="w-12 h-2 bg-[#252B37]" />
                       <div className="w-12 h-2 bg-[#252B37]" />
                     </div>
@@ -197,7 +198,7 @@ export default function ProductShowcase() {
                 {/* Command Centre Mockup */}
                 <div className="w-full h-full bg-[#0D0F14] border border-[#252B37] rounded-[2px] p-6 flex flex-col gap-6">
                   <div className="flex justify-between items-center">
-                    <span className="font-mono text-[10px] text-[#39FF14] tracking-widest">BUYING SIGNALS</span>
+                    <span className="font-mono text-[10px] text-[#C9A84C] tracking-widest">BUYING SIGNALS</span>
                     <div className="w-4 h-4 bg-[#39FF14]/20 rounded-full flex items-center justify-center">
                       <div className="w-1.5 h-1.5 bg-[#39FF14] rounded-full animate-pulse" />
                     </div>
@@ -207,7 +208,7 @@ export default function ProductShowcase() {
                       {[1, 2, 3, 4].map(i => (
                         <div key={i} className="p-3 bg-[#1C2029] border border-[#252B37]/40 rounded-[2px] flex justify-between">
                           <div className="w-20 h-2 bg-[#9DA8B7]/50" />
-                          <div className="w-8 h-2 bg-[#39FF14]" />
+                          <div className="w-8 h-2 bg-[#C9A84C]" />
                         </div>
                       ))}
                     </div>

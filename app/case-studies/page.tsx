@@ -46,15 +46,15 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Featured Case Study */}
-      <section className="reveal-section bg-[#0D0F14] py-[180px] px-6 lg:px-20 border-y border-[#252B37]/30">
+      <section className="reveal-section bg-[#0D0F14] pt-[80px] pb-[180px] px-6 lg:px-20 border-y border-[#252B37]/30">
         <div className="max-w-container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20">
           <div className="lg:col-span-6">
-            <span className="font-mono text-[11px] text-[#39FF14] uppercase tracking-[0.2em] mb-6 block">Featured Study · Sheffield, UK</span>
+            <span className="font-mono text-[11px] text-[#C9A84C] uppercase tracking-[0.2em] mb-6 block">Featured Study · Sheffield, UK</span>
             <h2 className="font-syne font-700 text-[32px] lg:text-[56px] text-[#EDE8DC] leading-tight mb-8">
               Heritage Motor Group
             </h2>
-            <p className="font-cormorant font-300 italic text-[24px] text-[#9DA8B7] mb-12 leading-relaxed">
-              &quot;Moving to ForecourIQ wasn&apos;t just a website upgrade. It was an operational reset. We reduced our average days-to-sell by 60% in the first quarter.&quot;
+            <p className="font-cormorant font-600 italic text-[28px] text-[#EDE8DC] mb-12 leading-[1.2] border-l-2 border-[#C9A84C] pl-6">
+              Moving to ForecourIQ wasn&apos;t just a website upgrade. It was an operational reset. We reduced our average days-to-sell by 60% in the first quarter.
             </p>
             
             <div className="grid grid-cols-2 gap-8 mb-12">
@@ -96,7 +96,7 @@ export default function CaseStudiesPage() {
                 Page loads dropped to 400ms. SEO traffic increased by 240% within 90 days. The intelligent buying signals allowed them to source three vehicles per month that they previously would have missed, with an average margin of £3,200 per unit.
               </p>
             </div>
-            <Button variant="primary" href="/demo">Read Full Analysis</Button>
+            <Button variant="gold" href="/demo">Read Full Analysis</Button>
           </div>
         </div>
       </section>
@@ -132,7 +132,7 @@ export default function CaseStudiesPage() {
                 tags: ["Operations", "DMS"]
               }
             ].map((study, i) => (
-              <div key={i} className="p-12 bg-[#0D0F14] border border-[#252B37] rounded-[2px] hover:border-[#39FF14]/40 transition-colors group">
+              <div key={i} className="p-12 bg-[#0D0F14] border border-[#252B37] rounded-[2px] hover:border-[#C9A84C]/40 transition-colors group">
                 <div className="flex flex-wrap gap-2 mb-8">
                   {study.tags.map((tag, j) => (
                     <span key={j} className="px-3 py-1 border border-[#252B37] rounded-full font-mono text-[9px] text-[#5C6678] uppercase tracking-wider group-hover:border-[#39FF14]/20 transition-colors">
@@ -141,11 +141,11 @@ export default function CaseStudiesPage() {
                   ))}
                 </div>
                 <h3 className="font-syne font-700 text-[24px] text-[#EDE8DC] mb-2">{study.name}</h3>
-                <p className="font-mono text-[14px] text-[#39FF14] mb-6 uppercase tracking-wider">{study.metric}</p>
+                <p className="font-mono text-[14px] text-[#C9A84C] mb-6 uppercase tracking-wider">{study.metric}</p>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed mb-10">
                   {study.tagline}
                 </p>
-                <a href="#" className="font-mono text-[11px] text-[#EDE8DC] uppercase tracking-[0.2em] inline-flex items-center group-hover:text-[#39FF14] transition-colors">
+                <a href="#" className="font-mono text-[11px] text-[#EDE8DC] uppercase tracking-[0.2em] inline-flex items-center group-hover:text-[#C9A84C] transition-colors">
                   View Study →
                 </a>
               </div>

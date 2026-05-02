@@ -19,6 +19,7 @@ export default {
         pewter: "#5C6678",
         muted: "#353D4C",
         electric: "#39FF14",
+        gold: "#C9A84C",
         signal: {
           positive: "#3DB87A",
           hold: "#D4922A",

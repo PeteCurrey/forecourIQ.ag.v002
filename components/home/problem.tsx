@@ -25,12 +25,12 @@ const PROBLEMS = [
             </div>
           </div>
           <div>
-            <div className="flex justify-between font-mono text-[11px] text-[#39FF14] mb-2">
+            <div className="flex justify-between font-mono text-[11px] text-[#C9A84C] mb-2">
               <span>ForecourIQ Dealer Average</span>
               <span>Pos. 3</span>
             </div>
             <div className="h-2 bg-[#252B37] w-full">
-              <div className="h-full bg-[#39FF14] w-[90%]" />
+              <div className="h-full bg-[#C9A84C] w-[90%]" />
             </div>
           </div>
         </div>
@@ -214,7 +214,7 @@ export default function Problem() {
                     <p className="font-cormorant font-300 text-[18px] lg:text-[20px] text-[#9DA8B7] leading-relaxed mb-8">
                       {problem.description}
                     </p>
-                    <p className="font-cormorant font-300 italic text-[16px] lg:text-[18px] text-[#39FF14]">
+                    <p className="font-cormorant font-300 italic text-[16px] lg:text-[18px] text-[#C9A84C]">
                       {problem.solution}
                     </p>
                   </div>
@@ -235,7 +235,7 @@ export default function Problem() {
                     <p className="font-cormorant font-300 text-[18px] lg:text-[20px] text-[#9DA8B7] leading-relaxed mb-8">
                       {problem.description}
                     </p>
-                    <p className="font-cormorant font-300 italic text-[16px] lg:text-[18px] text-[#39FF14]">
+                    <p className="font-cormorant font-300 italic text-[16px] lg:text-[18px] text-[#C9A84C]">
                       {problem.solution}
                     </p>
                   </div>

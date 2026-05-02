@@ -1,26 +1,29 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { gsap, ScrollTrigger } from "@/lib/gsap-init";
 
 export default function Stats() {
-  const [count, setCount] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
-  const numberRef = useRef<HTMLDivElement>(null);
+  const counterRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
+      gsap.registerPlugin(ScrollTrigger);
+      
+      const obj = { value: 0 };
       ScrollTrigger.create({
         trigger: sectionRef.current,
-        start: "top 70%",
+        start: "top 80%",
         onEnter: () => {
-          const obj = { value: 0 };
           gsap.to(obj, {
             value: 38,
             duration: 2,
             ease: "power2.out",
             onUpdate: () => {
-              setCount(Math.floor(obj.value));
+              if (counterRef.current) {
+                counterRef.current.textContent = Math.round(obj.value).toString();
+              }
             },
           });
         },
@@ -53,8 +56,8 @@ export default function Stats() {
           Our dealers reduce days-to-sell by an average of
         </p>
 
-        <div ref={numberRef} className="font-cormorant font-700 text-[150px] lg:text-[200px] text-[#EDE8DC] leading-none tracking-[-0.04em] mb-8 flex justify-center items-baseline">
-          <span>{count}</span>
+        <div className="font-cormorant font-700 text-[150px] lg:text-[200px] text-[#EDE8DC] leading-none tracking-[-0.04em] mb-8 flex justify-center items-baseline">
+          <span ref={counterRef}>0</span>
           <span className="text-[100px] lg:text-[120px]">%</span>
         </div>
 

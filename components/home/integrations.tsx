@@ -71,9 +71,9 @@ export default function Integrations() {
           {INTEGRATIONS.map((item, i) => (
             <div 
               key={i} 
-              className="integration-cell group flex flex-col gap-2 pb-6 border-b border-[#252B37]/30 transition-all duration-300 hover:border-[#39FF14]/40"
+              className="integration-cell group flex flex-col gap-2 pb-6 border-b border-[#252B37]/30 transition-all duration-300 hover:border-[#C9A84C]/40"
             >
-              <h4 className="font-syne font-700 text-[16px] text-[#EDE8DC] group-hover:text-[#39FF14] transition-colors duration-300">
+              <h4 className="font-syne font-700 text-[16px] text-[#EDE8DC] group-hover:text-[#C9A84C] transition-colors duration-300">
                 {item.name}
               </h4>
               <span className="font-mono text-[10px] text-[#5C6678] uppercase tracking-[0.12em]">

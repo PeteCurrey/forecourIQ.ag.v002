@@ -69,7 +69,7 @@ export default function HowItWorks() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-[#0D0F14] py-[180px] px-6 lg:px-20 overflow-hidden">
+    <section ref={sectionRef} className="bg-[#0D0F14] pt-[240px] pb-[180px] px-6 lg:px-20 overflow-hidden">
       <div className="max-w-container mx-auto">
         {/* Heading */}
         <div className="max-w-[640px] mb-20">
@@ -83,10 +83,16 @@ export default function HowItWorks() {
         </div>
 
         {/* Steps Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 border-t border-[#252B37]/20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 border-t border-[#252B37]/50 relative">
           {STEPS.map((step, i) => (
-            <div key={i} className="step-col pt-12 pb-16 lg:px-12 lg:first:pl-0 lg:last:pr-0 border-b lg:border-b-0 lg:border-r border-[#252B37]/20 last:border-r-0">
-              <span className="font-mono text-[13px] text-[#39FF14] tracking-[0.16em] uppercase mb-8 block">
+            <div key={i} className="step-col pt-12 pb-16 lg:px-12 lg:first:pl-0 lg:last:pr-0 border-b lg:border-b-0 lg:border-r border-[#252B37]/20 last:border-r-0 relative">
+              {/* Node Anchor */}
+              <div 
+                className={`absolute top-[-4.5px] left-0 w-[9px] h-[9px] border rounded-[1px] bg-[#07080B] z-20 transition-colors duration-500 ${
+                  i === 0 ? "border-[#C9A84C] bg-[#C9A84C]" : "border-[#252B37]"
+                }`} 
+              />
+              <span className="font-mono text-[13px] text-[#C9A84C] tracking-[0.16em] uppercase mb-8 block">
                 {step.day}
               </span>
               <h3 className="font-syne font-700 text-[28px] text-[#EDE8DC] mb-6 leading-tight">
@@ -98,7 +104,7 @@ export default function HowItWorks() {
               <ul className="space-y-3">
                 {step.deliverables.map((item, j) => (
                   <li key={j} className="flex items-center gap-3">
-                    <div className="w-1 h-1 bg-[#39FF14] opacity-40" />
+                    <div className="w-1 h-1 bg-[#C9A84C] opacity-60" />
                     <span className="font-mono text-[11px] text-[#5C6678] tracking-wider uppercase">
                       {item}
                     </span>
@@ -110,7 +116,7 @@ export default function HowItWorks() {
         </div>
 
         {/* Footer Note */}
-        <div className="mt-20 pt-10 border-t border-[#39FF14]/40">
+        <div className="mt-20 pt-10 border-t border-[#C9A84C]/20">
           <p className="font-cormorant font-300 italic text-[18px] text-[#EDE8DC] text-center mb-4">
             &quot;Most dealers see a measurable change in stock turn within the first 30 days.&quot;
           </p>

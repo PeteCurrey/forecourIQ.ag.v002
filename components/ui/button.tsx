@@ -8,7 +8,7 @@ function cn(...inputs: ClassValue[]) {
 }
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "primary" | "secondary" | "ghost" | "gold";
   href?: string;
   children: React.ReactNode;
 }
@@ -26,6 +26,7 @@ export default function Button({
     primary: "bg-[#39FF14] text-[#07080B] px-6 py-3 hover:bg-[#C79260]",
     secondary: "bg-transparent text-[#EDE8DC] border border-[#252B37] px-6 py-3 hover:border-[#EDE8DC]",
     ghost: "bg-transparent text-[#EDE8DC] font-400 normal-case tracking-normal hover:text-[#39FF14] p-0 h-auto",
+    gold: "bg-[#C9A84C] text-[#07080B] px-6 py-3 hover:bg-[#D4B86A]",
   };
 
   const content = (
