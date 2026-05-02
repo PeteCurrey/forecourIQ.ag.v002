@@ -2,8 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "@/lib/gsap-init";
-import Eyebrow from "@/components/ui/eyebrow";
-import ClosingCTA from "@/components/home/closing-cta";
+import PageHero from "@/components/ui/page-hero";
 
 export default function DMSPage() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -37,19 +36,12 @@ export default function DMSPage() {
 
   return (
     <div ref={containerRef} className="flex flex-col w-full bg-[#07080B]">
-      {/* Hero */}
-      <section className="relative min-h-[70vh] flex flex-col justify-center px-6 lg:px-20 pt-20 overflow-hidden">
-        <div className="max-w-container mx-auto w-full relative z-10">
-          <Eyebrow className="mb-8 reveal-text">The Operational Core</Eyebrow>
-          <h1 className="font-cormorant font-600 text-[56px] lg:text-[80px] text-[#EDE8DC] leading-[0.95] max-w-4xl mb-8 reveal-text">
-            Goodbye spreadsheets.<br />Hello control.
-          </h1>
-          <p className="font-cormorant font-300 italic text-[22px] text-[#9DA8B7] max-w-2xl reveal-text">
-            The ForecourIQ Dealer Management System is cloud-native, infinitely scalable, and built specifically for the high-performance UK independent. Everything from stock to FCA compliance, unified in one tab.
-          </p>
-        </div>
-        <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[60%] aspect-square bg-[#0EA5E9]/[0.02] rounded-full blur-[120px]" />
-      </section>
+      <PageHero 
+        eyebrow="The Operational Core"
+        title={<>Goodbye spreadsheets.<br />Hello control.</>}
+        description="The ForecourIQ Dealer Management System is cloud-native, infinitely scalable, and built specifically for the high-performance UK independent. Everything unified in one tab."
+        backgroundImage="/images/suv-hero.png"
+      />
 
       {/* Core Features */}
       <section className="reveal-section bg-[#0D0F14] py-[180px] px-6 lg:px-20">

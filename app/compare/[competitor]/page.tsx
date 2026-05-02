@@ -1,4 +1,4 @@
-import Eyebrow from "@/components/ui/eyebrow";
+import PageHero from "@/components/ui/page-hero";
 import ClosingCTA from "@/components/home/closing-cta";
 
 interface CompetitorData {
@@ -124,18 +124,12 @@ export default async function ComparePage({ params }: { params: Promise<{ compet
 
   return (
     <div className="flex flex-col w-full bg-[#07080B]">
-      {/* Hero */}
-      <section className="relative min-h-[50vh] flex flex-col justify-center px-6 lg:px-20 pt-20">
-        <div className="max-w-container mx-auto w-full">
-          <Eyebrow className="mb-8">Comparison</Eyebrow>
-          <h1 className="font-cormorant font-600 text-[56px] lg:text-[72px] text-[#EDE8DC] leading-[0.95] max-w-4xl mb-8">
-            {competitor.headline}
-          </h1>
-          <p className="font-cormorant font-300 italic text-[20px] text-[#9DA8B7] max-w-2xl">
-            {competitor.summary_paragraph}
-          </p>
-        </div>
-      </section>
+      <PageHero 
+        eyebrow="Comparison"
+        title={competitor.headline}
+        description={competitor.summary_paragraph}
+        backgroundImage="/images/racing-hero.png"
+      />
 
       {/* About Section */}
       <section className="bg-[#0D0F14] py-[100px] px-6 lg:px-20 border-y border-[#252B37]/30">

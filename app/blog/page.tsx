@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "@/lib/gsap-init";
-import Eyebrow from "@/components/ui/eyebrow";
+import PageHero from "@/components/ui/page-hero";
 import { BLOG_POSTS, BlogPost } from "@/lib/blog-data";
 import Link from "next/link";
 
@@ -35,15 +35,12 @@ export default function BlogPage() {
 
   return (
     <div className="flex flex-col w-full bg-[#07080B]">
-      {/* Hero */}
-      <section className="relative min-h-[40vh] flex flex-col justify-center px-6 lg:px-20 pt-20">
-        <div className="max-w-container mx-auto w-full">
-          <Eyebrow className="mb-8">The Editorial</Eyebrow>
-          <h1 className="font-cormorant font-600 text-[56px] lg:text-[72px] text-[#EDE8DC] leading-[0.95] max-w-4xl">
-            Intelligence from the forecourt.
-          </h1>
-        </div>
-      </section>
+      <PageHero 
+        eyebrow="The Editorial"
+        title={<>Intelligence from<br />the forecourt.</>}
+        description="The latest insights, market analysis, and prestige automotive news for the high-performance independent dealer."
+        backgroundImage="/images/luxury-sedan-hero.png"
+      />
 
       <section className="py-[100px] px-6 lg:px-20">
         <div className="max-w-container mx-auto">

@@ -2,8 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "@/lib/gsap-init";
-import Eyebrow from "@/components/ui/eyebrow";
-import ClosingCTA from "@/components/home/closing-cta";
+import PageHero from "@/components/ui/page-hero";
 
 export default function DailyBriefingPage() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -37,18 +36,12 @@ export default function DailyBriefingPage() {
 
   return (
     <div ref={containerRef} className="flex flex-col w-full bg-[#07080B]">
-      {/* Hero */}
-      <section className="relative min-h-[70vh] flex flex-col justify-center px-6 lg:px-20 pt-20 overflow-hidden">
-        <div className="max-w-container mx-auto w-full relative z-10">
-          <Eyebrow className="mb-8 reveal-text">Daily Briefing & News</Eyebrow>
-          <h1 className="font-cormorant font-600 text-[56px] lg:text-[80px] text-[#EDE8DC] leading-[0.95] max-w-4xl mb-8 reveal-text">
-            The Morning Wire.<br />Your forecourt, summarized.
-          </h1>
-          <p className="font-cormorant font-300 italic text-[22px] text-[#9DA8B7] max-w-2xl reveal-text">
-            Every morning at 7:00 AM, receive a synthesized brief of overnight leads, market shifts, competitor moves, and the latest prestige industry news, model launches, and recalls.
-          </p>
-        </div>
-      </section>
+      <PageHero 
+        eyebrow="Daily Briefing & News"
+        title={<>The Morning Wire.<br />Your forecourt, summarized.</>}
+        description="Every morning at 7:00 AM, receive a synthesized brief of overnight leads, market shifts, competitor moves, and the latest prestige industry news, model launches, and recalls."
+        backgroundImage="/images/hypercar-hero.png"
+      />
 
       {/* Deep Dive Feature */}
       <section className="reveal-section bg-[#0D0F14] py-[180px] px-6 lg:px-20 border-y border-[#252B37]/30">

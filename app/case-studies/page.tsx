@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "@/lib/gsap-init";
-import Eyebrow from "@/components/ui/eyebrow";
+import PageHero from "@/components/ui/page-hero";
 import Button from "@/components/ui/button";
 import ClosingCTA from "@/components/home/closing-cta";
 
@@ -32,18 +32,12 @@ export default function CaseStudiesPage() {
 
   return (
     <div ref={containerRef} className="flex flex-col w-full bg-[#07080B]">
-      {/* Hero */}
-      <section className="relative min-h-[50vh] flex flex-col justify-center px-6 lg:px-20 pt-20 overflow-hidden">
-        <div className="max-w-container mx-auto w-full relative z-10">
-          <Eyebrow className="mb-8">Success Stories</Eyebrow>
-          <h1 className="font-cormorant font-600 text-[56px] lg:text-[80px] text-[#EDE8DC] leading-[0.95] max-w-4xl mb-8">
-            Real dealerships.<br />Measured results.
-          </h1>
-          <p className="font-cormorant font-300 italic text-[22px] text-[#9DA8B7] max-w-2xl">
-            We don&apos;t just build websites; we transform operational performance. These case studies highlight the impact of intelligent buying and high-performance engineering.
-          </p>
-        </div>
-      </section>
+      <PageHero 
+        eyebrow="Success Stories"
+        title={<>Real dealerships.<br />Measured results.</>}
+        description="We don't just build websites; we transform operational performance. These case studies highlight the impact of intelligent buying and high-performance engineering."
+        backgroundImage="/images/suv-hero.png"
+      />
 
       {/* Featured Case Study */}
       <section className="reveal-section bg-[#0D0F14] pt-[80px] pb-[180px] px-6 lg:px-20 border-y border-[#252B37]/30">

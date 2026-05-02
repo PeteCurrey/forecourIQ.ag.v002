@@ -2,8 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "@/lib/gsap-init";
-import Eyebrow from "@/components/ui/eyebrow";
-import ClosingCTA from "@/components/home/closing-cta";
+import PageHero from "@/components/ui/page-hero";
 
 export default function CompetitorMonitoringPage() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -37,18 +36,12 @@ export default function CompetitorMonitoringPage() {
 
   return (
     <div ref={containerRef} className="flex flex-col w-full bg-[#07080B]">
-      {/* Hero */}
-      <section className="relative min-h-[70vh] flex flex-col justify-center px-6 lg:px-20 pt-20 overflow-hidden">
-        <div className="max-w-container mx-auto w-full relative z-10">
-          <Eyebrow className="mb-8 reveal-text">Competitor Monitoring</Eyebrow>
-          <h1 className="font-cormorant font-600 text-[56px] lg:text-[80px] text-[#EDE8DC] leading-[0.95] max-w-4xl mb-8 reveal-text">
-            Market Intelligence.<br />See what they sell, when they drop.
-          </h1>
-          <p className="font-cormorant font-300 italic text-[22px] text-[#9DA8B7] max-w-2xl reveal-text">
-            Track up to 20 local or national competitors. Receive instant alerts when they acquire new stock, drop a price, or sell a vehicle you&apos;re competing against.
-          </p>
-        </div>
-      </section>
+      <PageHero 
+        eyebrow="Competitor Monitoring"
+        title={<>Market Intelligence.<br />See what they sell, when they drop.</>}
+        description="Track up to 20 local or national competitors. Receive instant alerts when they acquire new stock, drop a price, or sell a vehicle you're competing against."
+        backgroundImage="/images/luxury-sedan-hero.png"
+      />
 
       {/* Deep Dive Feature */}
       <section className="reveal-section bg-[#0D0F14] py-[180px] px-6 lg:px-20 border-y border-[#252B37]/30">

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Eyebrow from "@/components/ui/eyebrow";
+import PageHero from "@/components/ui/page-hero";
 import Button from "@/components/ui/button";
 
 export default function DemoPage() {
@@ -34,18 +34,12 @@ export default function DemoPage() {
 
   return (
     <div className="flex flex-col w-full bg-[#07080B]">
-      {/* Hero */}
-      <section className="relative min-h-[50vh] flex flex-col justify-center px-6 lg:px-20 pt-20">
-        <div className="max-w-container mx-auto w-full">
-          <Eyebrow className="mb-8">Book a Demonstration</Eyebrow>
-          <h1 className="font-cormorant font-600 text-[56px] lg:text-[72px] text-[#EDE8DC] leading-[0.95] max-w-4xl mb-8">
-            See the platform. Ask the questions.
-          </h1>
-          <p className="font-cormorant font-300 italic text-[20px] text-[#9DA8B7] max-w-md">
-            A 15-minute walkthrough with a ForecourIQ specialist. No sales pressure. We show you the platform — you decide if it&apos;s right for your dealership.
-          </p>
-        </div>
-      </section>
+      <PageHero 
+        eyebrow="Book a Demonstration"
+        title={<>See the platform.<br />Ask the questions.</>}
+        description="A 15-minute walkthrough with a ForecourIQ specialist. No sales pressure. We show you the platform — you decide if it's right for your dealership."
+        backgroundImage="/images/gt-hero.png"
+      />
 
       <section className="py-[100px] px-6 lg:px-20">
         <div className="max-w-container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20">

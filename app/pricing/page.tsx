@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Eyebrow from "@/components/ui/eyebrow";
+import PageHero from "@/components/ui/page-hero";
 import Button from "@/components/ui/button";
 
 const TIERS = [
@@ -154,18 +154,12 @@ export default function PricingPage() {
 
   return (
     <div className="flex flex-col w-full bg-[#07080B]">
-      {/* Hero */}
-      <section className="relative min-h-[50vh] flex flex-col justify-center px-6 lg:px-20 pt-20">
-        <div className="max-w-container mx-auto w-full">
-          <Eyebrow className="mb-8">Investment</Eyebrow>
-          <h1 className="font-cormorant font-600 text-[56px] lg:text-[80px] text-[#EDE8DC] leading-[0.95] max-w-4xl mb-8">
-            Transparent pricing. No negotiations.
-          </h1>
-          <p className="font-cormorant font-300 italic text-[20px] text-[#9DA8B7] max-w-2xl">
-            Every plan published. Every feature listed. What you see is what you pay.
-          </p>
-        </div>
-      </section>
+      <PageHero 
+        eyebrow="Investment"
+        title={<>Transparent pricing.<br />No negotiations.</>}
+        description="Every plan published. Every feature listed. What you see is what you pay. No hidden costs."
+        backgroundImage="/images/hypercar-hero.png"
+      />
 
       {/* Pricing Panels */}
       <section className="bg-[#0D0F14] py-[100px] px-6 lg:px-20">

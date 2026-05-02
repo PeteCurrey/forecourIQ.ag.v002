@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "@/lib/gsap-init";
-import Eyebrow from "@/components/ui/eyebrow";
+import PageHero from "@/components/ui/page-hero";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
@@ -36,18 +36,12 @@ export default function FeaturesPage() {
 
   return (
     <div className="flex flex-col w-full">
-      {/* Hero */}
-      <section className="relative min-h-[60vh] bg-[#07080B] flex items-center px-6 lg:px-20 pt-20 overflow-hidden">
-        <div className="max-w-container mx-auto w-full">
-          <Eyebrow className="mb-8">The Platform</Eyebrow>
-          <h1 className="font-cormorant font-600 text-[56px] lg:text-[80px] text-[#EDE8DC] leading-[0.95] max-w-4xl mb-8">
-            Everything a modern dealership needs. In one platform.
-          </h1>
-          <p className="font-cormorant font-300 italic text-[20px] text-[#9DA8B7] max-w-lg">
-            Three modules. Unified data. One login.
-          </p>
-        </div>
-      </section>
+      <PageHero 
+        eyebrow="The Platform"
+        title={<>Everything a modern<br />dealership needs.<br />In one platform.</>}
+        description="Three modules. Unified data. One login. The unfair advantage for the independent car dealer."
+        backgroundImage="/images/gt-hero.png"
+      />
 
       {/* Features Directory Grid */}
       <section className="bg-[#0D0F14] py-[100px] lg:py-[180px] px-6 lg:px-20">

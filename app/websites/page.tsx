@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "@/lib/gsap-init";
-import Eyebrow from "@/components/ui/eyebrow";
+import PageHero from "@/components/ui/page-hero";
 import Button from "@/components/ui/button";
 
 const PROJECTS = [
@@ -45,20 +45,12 @@ export default function WebsitesPage() {
 
   return (
     <div ref={containerRef} className="flex flex-col w-full bg-[#07080B]">
-      {/* Hero */}
-      <section className="relative min-h-[70vh] flex flex-col justify-center px-6 lg:px-20 pt-20 overflow-hidden">
-        <div className="max-w-container mx-auto w-full relative z-10">
-          <Eyebrow className="mb-8 reveal-text">Digital Engineering</Eyebrow>
-          <h1 className="font-cormorant font-600 text-[56px] lg:text-[80px] text-[#EDE8DC] leading-[0.95] max-w-4xl mb-8 reveal-text">
-            Most agencies sell you a template. We build you an asset.
-          </h1>
-          <p className="font-cormorant font-300 italic text-[22px] text-[#9DA8B7] max-w-2xl reveal-text">
-            Every ForecourIQ website is a performance-engineered instrument. We don&apos;t use WordPress. We don&apos;t use themes. We use Next.js 15 to build the fastest dealer websites in the UK.
-          </p>
-        </div>
-        {/* Background Decorative element */}
-        <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[60%] aspect-square bg-[#0EA5E9]/[0.02] rounded-full blur-[120px]" />
-      </section>
+      <PageHero 
+        eyebrow="Digital Engineering"
+        title={<>Most agencies sell<br />you a template.<br />We build you an asset.</>}
+        description="Every ForecourIQ website is a performance-engineered instrument. We don't use WordPress. We don't use themes. We use Next.js 15 to build the fastest dealer websites in the UK."
+        backgroundImage="/images/luxury-sedan-hero.png"
+      />
 
       {/* The Argument: Next.js vs WordPress */}
       <section className="bg-[#0D0F14] py-[180px] px-6 lg:px-20">
