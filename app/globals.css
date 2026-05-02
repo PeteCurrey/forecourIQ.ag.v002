@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --void: #07080B;
+  --carbon: #0D0F14;
+  --asphalt: #13161C;
+  --steel: #1C2029;
+  --slate: #252B37;
+  --cream: #EDE8DC;
+  --silver: #9DA8B7;
+  --pewter: #5C6678;
+  --muted: #353D4C;
+  --electric: #39FF14;
+  
+  --signal-positive: #3DB87A;
+  --signal-hold: #D4922A;
+  --signal-negative: #C94040;
+}
+
+@layer base {
+  html {
+    background-color: var(--void);
+    color: var(--cream);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-void text-cream overflow-x-hidden;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--slate);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--electric);
+  }
+
+  /* Selection */
+  ::selection {
+    background: var(--electric);
+    color: var(--void);
+  }
+}
+
+@layer utilities {
+  .text-display {
+    font-family: var(--font-cormorant);
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+  }
+  
+  .text-heading {
+    font-family: var(--font-syne);
+    letter-spacing: -0.01em;
+  }
+  
+  .text-heading-large {
+    font-family: var(--font-syne);
+    letter-spacing: -0.03em;
+  }
+  
+  .text-mono {
+    font-family: var(--font-mono);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .glass-panel {
+    background: rgba(13, 15, 20, 0.92);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(37, 43, 55, 0.4);
+  }
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
