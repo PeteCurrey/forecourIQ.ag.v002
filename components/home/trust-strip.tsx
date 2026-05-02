@@ -34,7 +34,7 @@ export default function TrustStrip() {
                   {logo}
                 </span>
                 {index < (LOGOS.length * 2) - 1 && (
-                  <span className="text-[#39FF14] opacity-60">·</span>
+                  <span className="text-[#0EA5E9] opacity-60">·</span>
                 )}
               </React.Fragment>
             ))}

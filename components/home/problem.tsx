@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "@/lib/gsap-init";
 import Eyebrow from "@/components/ui/eyebrow";
+import Image from "next/image";
 
 const PROBLEMS = [
   {
@@ -12,27 +13,42 @@ const PROBLEMS = [
     description: "Buyers search. If you don't appear, you don't exist. Independent dealers have lost enormous ground to franchise sites and aggregators built on infrastructure they can't match. An outdated site isn't just aesthetic — it's revenue walking out the door.",
     solution: "ForecourIQ dealer websites: Next.js 15, sub-1s loads, full local SEO architecture.",
     visual: (
-      <div className="bg-[#0D0F14] border border-[#252B37] rounded-[2px] p-12 flex flex-col justify-center h-full">
-        <h4 className="font-mono text-[11px] text-[#5C6678] uppercase tracking-[0.16em] mb-8">Google Search Visibility</h4>
-        <div className="space-y-6">
-          <div>
-            <div className="flex justify-between font-mono text-[11px] text-[#9DA8B7] mb-2">
-              <span>Average Independent Dealer</span>
-              <span>Pos. 14</span>
+      <div className="flex flex-col gap-10">
+        <div className="bg-[#0D0F14] border border-[#252B37] rounded-[2px] p-12 flex flex-col justify-center h-full min-h-[300px]">
+          <h4 className="font-mono text-[11px] text-[#5C6678] uppercase tracking-[0.16em] mb-8">Google Search Visibility</h4>
+          <div className="space-y-6">
+            <div>
+              <div className="flex justify-between font-mono text-[11px] text-[#9DA8B7] mb-2">
+                <span>Average Independent Dealer</span>
+                <span>Pos. 14</span>
+              </div>
+              <div className="h-2 bg-[#252B37] w-full">
+                <div className="h-full bg-[#353D4C] w-[40%]" />
+              </div>
             </div>
-            <div className="h-2 bg-[#252B37] w-full">
-              <div className="h-full bg-[#353D4C] w-[40%]" />
+            <div>
+              <div className="flex justify-between font-mono text-[11px] text-[#0EA5E9] mb-2">
+                <span>ForecourIQ Dealer Average</span>
+                <span>Pos. 3</span>
+              </div>
+              <div className="h-2 bg-[#252B37] w-full">
+                <div className="h-full bg-[#0EA5E9] w-[90%]" />
+              </div>
             </div>
           </div>
-          <div>
-            <div className="flex justify-between font-mono text-[11px] text-[#C9A84C] mb-2">
-              <span>ForecourIQ Dealer Average</span>
-              <span>Pos. 3</span>
-            </div>
-            <div className="h-2 bg-[#252B37] w-full">
-              <div className="h-full bg-[#C9A84C] w-[90%]" />
-            </div>
-          </div>
+        </div>
+        
+        {/* Problem 01 Image */}
+        <div className="hidden md:block relative w-full h-[500px] border border-[#1C2029] rounded-[2px] overflow-hidden">
+          <Image 
+            src="/images/problem-01-forecourt.jpg" 
+            alt="Prestige car forecourt at dusk"
+            width={400}
+            height={500}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(180deg,transparent_0%,#07080B_100%)]" />
+          <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(270deg,transparent_40%,#07080B_100%)]" />
         </div>
       </div>
     ),
@@ -51,7 +67,7 @@ const PROBLEMS = [
           <div className="flex gap-2">
             <div className="w-2 h-2 rounded-full bg-[#C94040]/50" />
             <div className="w-2 h-2 rounded-full bg-[#D4922A]/50" />
-            <div className="w-2 h-2 rounded-full bg-[#3DB87A]/50" />
+            <div className="w-2 h-2 rounded-full bg-[#0EA5E9]/50" />
           </div>
         </div>
         <div className="p-0 overflow-x-auto">
@@ -69,7 +85,7 @@ const PROBLEMS = [
                 <td className="p-4">LR71 FKZ</td>
                 <td className="p-4">BMW 320d M Sport</td>
                 <td className="p-4">£28,450</td>
-                <td className="p-4 text-[#3DB87A]">£3,200</td>
+                <td className="p-4 text-[#0EA5E9]">£3,200</td>
               </tr>
               <tr className="border-b border-[#252B37]/10">
                 <td className="p-4">AV69 OXP</td>
@@ -97,43 +113,58 @@ const PROBLEMS = [
     description: "Auction floors reward preparation. The dealer who knows what their local market wants — make, model, spec, colour, price point — before the auction starts wins the car and the margin. Most dealers never had access to that intelligence.",
     solution: "ForecourIQ Buying Command Centre: AI-driven market intelligence for the UK independent.",
     visual: (
-      <div className="bg-[#0D0F14] border border-[#252B37] rounded-[2px] p-8 h-full flex flex-col">
-        <div className="flex justify-between items-center mb-6">
-          <span className="font-mono text-[10px] text-[#5C6678] uppercase tracking-wider">Buying Command Centre</span>
-          <div className="flex items-center gap-2">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#3DB87A] animate-pulse" />
-            <span className="font-mono text-[10px] text-[#3DB87A] tracking-widest">LIVE</span>
-          </div>
-        </div>
-        <div className="space-y-4 flex-1">
-          {[
-            { v: "BMW 320d", d: "HIGH", m: "+£3.2k", a: "BUY" },
-            { v: "Audi A3", d: "HIGH", m: "+£2.8k", a: "BUY" },
-            { v: "VW Golf", d: "MED", m: "+£2.1k", a: "HOLD" },
-            { v: "RR Evoque", d: "HIGH", m: "+£4.4k", a: "BUY" },
-          ].map((row, i) => (
-            <div key={i} className="flex justify-between items-center border-b border-[#252B37]/10 pb-3">
-              <span className="font-mono text-[11px] text-[#EDE8DC]">{row.v}</span>
-              <div className="flex gap-6 items-center">
-                <span className="font-mono text-[10px] text-[#5C6678]">{row.d}</span>
-                <span className={`font-mono text-[11px] ${row.a === 'BUY' ? 'text-[#39FF14]' : 'text-[#5C6678]'}`}>{row.a}</span>
-              </div>
+      <div className="flex flex-col gap-10 h-full">
+        <div className="bg-[#0D0F14] border border-[#252B37] rounded-[2px] p-8 flex flex-col">
+          <div className="flex justify-between items-center mb-6">
+            <span className="font-mono text-[10px] text-[#5C6678] uppercase tracking-wider">Buying Command Centre</span>
+            <div className="flex items-center gap-2">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#0EA5E9] animate-pulse-slow" />
+              <span className="font-mono text-[10px] text-[#0EA5E9] tracking-widest">LIVE</span>
             </div>
-          ))}
+          </div>
+          <div className="space-y-4 flex-1">
+            {[
+              { v: "BMW 320d", d: "HIGH", m: "+£3.2k", a: "BUY" },
+              { v: "Audi A3", d: "HIGH", m: "+£2.8k", a: "BUY" },
+              { v: "VW Golf", d: "MED", m: "+£2.1k", a: "HOLD" },
+              { v: "RR Evoque", d: "HIGH", m: "+£4.4k", a: "BUY" },
+            ].map((row, i) => (
+              <div key={i} className="flex justify-between items-center border-b border-[#252B37]/10 pb-3">
+                <span className="font-mono text-[11px] text-[#EDE8DC]">{row.v}</span>
+                <div className="flex gap-6 items-center">
+                  <span className="font-mono text-[10px] text-[#5C6678]">{row.d}</span>
+                  <span className={`font-mono text-[11px] ${row.a === 'BUY' ? 'text-[#0EA5E9]' : 'text-[#5C6678]'}`}>{row.a}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 flex justify-between border-t border-[#252B37]/40 pt-4">
+            <div className="text-center">
+              <div className="font-mono text-[10px] text-[#5C6678]">SCORE</div>
+              <div className="font-mono text-[12px] text-[#EDE8DC]">84</div>
+            </div>
+            <div className="text-center">
+              <div className="font-mono text-[10px] text-[#5C6678]">SIGNALS</div>
+              <div className="font-mono text-[12px] text-[#EDE8DC]">8</div>
+            </div>
+            <div className="text-center">
+              <div className="font-mono text-[10px] text-[#5C6678]">DAYS</div>
+              <div className="font-mono text-[12px] text-[#EDE8DC]">16</div>
+            </div>
+          </div>
         </div>
-        <div className="mt-6 flex justify-between border-t border-[#252B37]/40 pt-4">
-          <div className="text-center">
-            <div className="font-mono text-[10px] text-[#5C6678]">SCORE</div>
-            <div className="font-mono text-[12px] text-[#EDE8DC]">84</div>
-          </div>
-          <div className="text-center">
-            <div className="font-mono text-[10px] text-[#5C6678]">SIGNALS</div>
-            <div className="font-mono text-[12px] text-[#EDE8DC]">8</div>
-          </div>
-          <div className="text-center">
-            <div className="font-mono text-[10px] text-[#5C6678]">DAYS</div>
-            <div className="font-mono text-[12px] text-[#EDE8DC]">16</div>
-          </div>
+
+        {/* Problem 03 Image */}
+        <div className="hidden md:block relative w-full h-[240px] border border-[#1C2029] rounded-[2px] overflow-hidden">
+          <Image 
+            src="/images/problem-vehicles-aerial.jpg" 
+            alt="Aerial view of prestige car dealership"
+            width={800}
+            height={240}
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(180deg,transparent_0%,#07080B_100%)]" />
+          <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(270deg,transparent_40%,#07080B_100%)]" />
         </div>
       </div>
     ),
@@ -214,17 +245,17 @@ export default function Problem() {
                     <p className="font-cormorant font-300 text-[18px] lg:text-[20px] text-[#9DA8B7] leading-relaxed mb-8">
                       {problem.description}
                     </p>
-                    <p className="font-cormorant font-300 italic text-[16px] lg:text-[18px] text-[#C9A84C]">
+                    <p className="font-cormorant font-300 italic text-[16px] lg:text-[18px] text-[#0EA5E9]">
                       {problem.solution}
                     </p>
                   </div>
-                  <div className="col-right lg:col-span-5 h-[400px]">
+                  <div className="col-right lg:col-span-5 h-full">
                     {problem.visual}
                   </div>
                 </>
               ) : (
                 <>
-                  <div className="col-left lg:col-span-5 h-[400px]">
+                  <div className="col-left lg:col-span-5 h-full">
                     {problem.visual}
                   </div>
                   <div className="col-right lg:col-span-7">
@@ -235,7 +266,7 @@ export default function Problem() {
                     <p className="font-cormorant font-300 text-[18px] lg:text-[20px] text-[#9DA8B7] leading-relaxed mb-8">
                       {problem.description}
                     </p>
-                    <p className="font-cormorant font-300 italic text-[16px] lg:text-[18px] text-[#C9A84C]">
+                    <p className="font-cormorant font-300 italic text-[16px] lg:text-[18px] text-[#0EA5E9]">
                       {problem.solution}
                     </p>
                   </div>

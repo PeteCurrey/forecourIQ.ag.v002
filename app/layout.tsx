@@ -48,7 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${cormorant.variable} ${syne.variable} ${mono.variable} scroll-smooth`} suppressHydrationWarning>
-      <body className="bg-[#07080B] text-[#EDE8DC] antialiased selection:bg-[#39FF14] selection:text-[#07080B]" suppressHydrationWarning>
+      <body className="bg-[#07080B] text-[#EDE8DC] antialiased selection:bg-[#0EA5E9] selection:text-[#07080B]" suppressHydrationWarning>
         <LenisProvider>
           <Header />
           <main>{children}</main>

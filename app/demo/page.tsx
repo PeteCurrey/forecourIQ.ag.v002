@@ -59,7 +59,7 @@ export default function DemoPage() {
                 { n: "03", h: "The Command Centre", b: "We run a live buying signal generation for your region — you see the AI recommendations that would be generated for your specific market." }
               ].map((item, i) => (
                 <div key={i} className="flex gap-6">
-                  <span className="font-mono text-[14px] text-[#39FF14] mt-1">{item.n}</span>
+                  <span className="font-mono text-[14px] text-[#0EA5E9] mt-1">{item.n}</span>
                   <div>
                     <h3 className="font-syne font-700 text-[18px] text-[#EDE8DC] mb-3">{item.h}</h3>
                     <p className="font-cormorant font-300 text-[16px] text-[#9DA8B7] leading-relaxed">
@@ -82,7 +82,7 @@ export default function DemoPage() {
             <div className="bg-[#0D0F14] border border-[#252B37] rounded-[2px] p-8 lg:p-12">
               {submitted ? (
                 <div className="text-center py-20 animate-reveal">
-                  <span className="font-mono text-[14px] text-[#39FF14] block mb-6">THANK YOU</span>
+                  <span className="font-mono text-[14px] text-[#0EA5E9] block mb-6">THANK YOU</span>
                   <h3 className="font-cormorant font-600 text-[32px] text-[#EDE8DC] mb-6">Request Received.</h3>
                   <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] max-w-sm mx-auto">
                     A ForecourIQ specialist will contact you within one business hour to confirm your demonstration time.
@@ -93,27 +93,27 @@ export default function DemoPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label className="font-syne font-700 text-[13px] text-[#5C6678] uppercase">Full Name</label>
-                      <input required name="name" type="text" className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#39FF14]/40 outline-none transition-colors" />
+                      <input required name="name" type="text" className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#0EA5E9]/40 outline-none transition-colors" />
                     </div>
                     <div className="space-y-2">
                       <label className="font-syne font-700 text-[13px] text-[#5C6678] uppercase">Dealership Name</label>
-                      <input required name="dealership" type="text" className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#39FF14]/40 outline-none transition-colors" />
+                      <input required name="dealership" type="text" className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#0EA5E9]/40 outline-none transition-colors" />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label className="font-syne font-700 text-[13px] text-[#5C6678] uppercase">Email Address</label>
-                      <input required name="email" type="email" className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#39FF14]/40 outline-none transition-colors" />
+                      <input required name="email" type="email" className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#0EA5E9]/40 outline-none transition-colors" />
                     </div>
                     <div className="space-y-2">
                       <label className="font-syne font-700 text-[13px] text-[#5C6678] uppercase">Phone Number</label>
-                      <input required name="phone" type="tel" className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#39FF14]/40 outline-none transition-colors" />
+                      <input required name="phone" type="tel" className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#0EA5E9]/40 outline-none transition-colors" />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label className="font-syne font-700 text-[13px] text-[#5C6678] uppercase">Vehicles in Stock</label>
-                      <select required name="stockSize" className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#39FF14]/40 outline-none transition-colors appearance-none">
+                      <select required name="stockSize" className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#0EA5E9]/40 outline-none transition-colors appearance-none">
                         <option value="under-20">Under 20</option>
                         <option value="20-50">20-50</option>
                         <option value="50-100">50-100</option>
@@ -122,12 +122,12 @@ export default function DemoPage() {
                     </div>
                     <div className="space-y-2">
                       <label className="font-syne font-700 text-[13px] text-[#5C6678] uppercase">Current Platform</label>
-                      <input name="currentPlatform" type="text" placeholder="Click Dealer, SpidersNet, none, etc." className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#39FF14]/40 outline-none transition-colors" />
+                      <input name="currentPlatform" type="text" placeholder="Click Dealer, SpidersNet, none, etc." className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#0EA5E9]/40 outline-none transition-colors" />
                     </div>
                   </div>
                   <div className="space-y-2">
                     <label className="font-syne font-700 text-[13px] text-[#5C6678] uppercase">How did you hear about us?</label>
-                    <select required name="source" className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#39FF14]/40 outline-none transition-colors appearance-none">
+                    <select required name="source" className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#0EA5E9]/40 outline-none transition-colors appearance-none">
                       <option value="google">Google</option>
                       <option value="autotrader">AutoTrader</option>
                       <option value="referred">Referred</option>
@@ -137,7 +137,7 @@ export default function DemoPage() {
                   </div>
                   <div className="space-y-2">
                     <label className="font-syne font-700 text-[13px] text-[#5C6678] uppercase">Anything specific you&apos;d like to see?</label>
-                    <textarea name="message" rows={4} className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#39FF14]/40 outline-none transition-colors resize-none" />
+                    <textarea name="message" rows={4} className="w-full bg-[#13161C] border border-[#252B37] rounded-[2px] p-4 text-[#EDE8DC] font-syne focus:border-[#0EA5E9]/40 outline-none transition-colors resize-none" />
                   </div>
                   
                   <div className="pt-4">

@@ -48,7 +48,7 @@ export default function DMSPage() {
             The ForecourIQ Dealer Management System is cloud-native, infinitely scalable, and built specifically for the high-performance UK independent. Everything from stock to FCA compliance, unified in one tab.
           </p>
         </div>
-        <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[60%] aspect-square bg-[#39FF14]/[0.02] rounded-full blur-[120px]" />
+        <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[60%] aspect-square bg-[#0EA5E9]/[0.02] rounded-full blur-[120px]" />
       </section>
 
       {/* Core Features */}
@@ -60,19 +60,19 @@ export default function DMSPage() {
             </h2>
             <div className="space-y-10">
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
-                <h3 className="font-syne font-700 text-[18px] text-[#39FF14] mb-4 uppercase tracking-widest">Stock Ledger</h3>
+                <h3 className="font-syne font-700 text-[18px] text-[#0EA5E9] mb-4 uppercase tracking-widest">Stock Ledger</h3>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed">
                   Real-time inventory management. Add a vehicle once, and it instantly syncs to your website, AutoTrader, eBay, and Motors.co.uk. Track preparation costs and live margins down to the penny.
                 </p>
               </div>
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
-                <h3 className="font-syne font-700 text-[18px] text-[#39FF14] mb-4 uppercase tracking-widest">FCA Compliance</h3>
+                <h3 className="font-syne font-700 text-[18px] text-[#0EA5E9] mb-4 uppercase tracking-widest">FCA Compliance</h3>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed">
                   Automated IDD documentation, Initial Disclosure tracking, and finance commission disclosures built directly into the sales workflow. You can&apos;t accidentally be non-compliant.
                 </p>
               </div>
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
-                <h3 className="font-syne font-700 text-[18px] text-[#39FF14] mb-4 uppercase tracking-widest">Margin Intelligence</h3>
+                <h3 className="font-syne font-700 text-[18px] text-[#0EA5E9] mb-4 uppercase tracking-widest">Margin Intelligence</h3>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed">
                   Stop guessing your net profit. Our DMS tracks buy price, transport, refurb, warranty, and portal advertising costs per unit to give you true Net Stand-in Value (NSV).
                 </p>
@@ -84,7 +84,7 @@ export default function DMSPage() {
             <div className="relative aspect-[4/3] bg-[#07080B] border border-[#252B37] rounded-[2px] p-6 lg:p-10 overflow-hidden flex flex-col">
               <div className="flex justify-between items-center border-b border-[#252B37] pb-6 mb-6">
                 <span className="font-mono text-[12px] text-[#5C6678] tracking-widest uppercase">Stock Ledger</span>
-                <span className="font-mono text-[12px] text-[#3DB87A] uppercase">All Systems Synced</span>
+                <span className="font-mono text-[12px] text-[#0EA5E9] uppercase">All Systems Synced</span>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-left font-mono text-[10px]">
@@ -106,7 +106,7 @@ export default function DMSPage() {
                         <span className="w-3 h-3 rounded-full bg-[#85C1E9]" title="Website" />
                       </td>
                       <td className="p-4 text-right">£165,500</td>
-                      <td className="p-4 text-right text-[#39FF14]">£185,000</td>
+                      <td className="p-4 text-right text-[#0EA5E9]">£185,000</td>
                     </tr>
                     <tr className="border-b border-[#252B37]/10">
                       <td className="p-4 text-[#EDE8DC]">AM70 VNT</td>
@@ -117,7 +117,7 @@ export default function DMSPage() {
                         <span className="w-3 h-3 rounded-full bg-[#C0392B]" title="eBay" />
                       </td>
                       <td className="p-4 text-right">£82,500</td>
-                      <td className="p-4 text-right text-[#39FF14]">£94,990</td>
+                      <td className="p-4 text-right text-[#0EA5E9]">£94,990</td>
                     </tr>
                     <tr className="border-b border-[#252B37]/10">
                       <td className="p-4 text-[#EDE8DC]">FR21 ROM</td>
@@ -126,7 +126,7 @@ export default function DMSPage() {
                         <span className="w-3 h-3 rounded-full bg-[#85C1E9]" />
                       </td>
                       <td className="p-4 text-right">£142,800</td>
-                      <td className="p-4 text-right text-[#39FF14]">£159,750</td>
+                      <td className="p-4 text-right text-[#0EA5E9]">£159,750</td>
                     </tr>
                   </tbody>
                 </table>

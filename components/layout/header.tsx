@@ -93,7 +93,7 @@ export default function Header() {
           <span className="font-syne font-700 text-[18px] text-[#EDE8DC] tracking-[-0.04em]">
             Forecour
           </span>
-          <span className="font-syne font-700 text-[18px] text-[#C9A84C] tracking-[-0.04em]">
+          <span className="font-syne font-700 text-[18px] text-[#0EA5E9] tracking-[-0.04em]">
             IQ
           </span>
         </Link>
@@ -107,7 +107,7 @@ export default function Header() {
                 className="relative font-syne font-400 text-[14px] text-[#9DA8B7] hover:text-[#EDE8DC] tracking-[0.02em] group py-4 block"
               >
                 {link.label}
-                <span className="absolute bottom-3 left-0 w-0 h-[1px] bg-[#C9A84C] transition-all duration-300 group-hover:w-full" />
+                <span className="absolute bottom-3 left-0 w-0 h-[1px] bg-[#0EA5E9] transition-all duration-300 group-hover:w-full" />
               </Link>
               
               {link.dropdown && (
@@ -120,13 +120,13 @@ export default function Header() {
                         className="group/item flex flex-col gap-4 p-4 border border-transparent hover:border-[#252B37]/40 hover:bg-[#07080B]/50 rounded-[2px] transition-all duration-300"
                       >
                         <div className={`w-full aspect-video rounded-[2px] border border-[#252B37]/40 flex items-center justify-center relative overflow-hidden ${sublink.gradient}`}>
-                           <div className="absolute inset-0 bg-[#C9A84C]/0 group-hover/item:bg-[#C9A84C]/5 transition-colors duration-300" />
-                           <div className="w-8 h-8 rounded-full border border-[#C9A84C]/30 flex items-center justify-center scale-90 group-hover/item:scale-100 group-hover/item:border-[#C9A84C] transition-all duration-300">
-                             <span className="w-1.5 h-1.5 bg-[#C9A84C] rounded-full opacity-50 group-hover/item:opacity-100 transition-opacity" />
+                           <div className="absolute inset-0 bg-[#0EA5E9]/0 group-hover/item:bg-[#0EA5E9]/5 transition-colors duration-300" />
+                           <div className="w-8 h-8 rounded-full border border-[#0EA5E9]/30 flex items-center justify-center scale-90 group-hover/item:scale-100 group-hover/item:border-[#0EA5E9] transition-all duration-300">
+                             <span className="w-1.5 h-1.5 bg-[#0EA5E9] rounded-full opacity-50 group-hover/item:opacity-100 transition-opacity" />
                            </div>
                         </div>
                         <div>
-                          <h4 className="font-syne font-700 text-[16px] text-[#EDE8DC] mb-1 group-hover/item:text-[#C9A84C] transition-colors">
+                          <h4 className="font-syne font-700 text-[16px] text-[#EDE8DC] mb-1 group-hover/item:text-[#0EA5E9] transition-colors">
                             {sublink.label}
                           </h4>
                           <p className="font-cormorant font-300 text-[14px] text-[#9DA8B7] leading-snug">
@@ -144,7 +144,7 @@ export default function Header() {
 
         {/* Right Action */}
         <div className="hidden lg:block ml-auto">
-          <Button href="/demo" variant="gold">Book a Demo</Button>
+          <Button href="/demo" variant="primary" className="px-6 py-3">Book a Demo</Button>
         </div>
 
         {/* Mobile Toggle */}
@@ -191,7 +191,7 @@ export default function Header() {
             </div>
           ))}
           <div className="mt-8 mobile-link">
-            <Button href="/demo" variant="gold" onClick={() => setIsMenuOpen(false)}>
+            <Button href="/demo" variant="primary" className="px-6 py-3" onClick={() => setIsMenuOpen(false)}>
               Book a Demo
             </Button>
           </div>

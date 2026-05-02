@@ -57,7 +57,7 @@ export default function WebsitesPage() {
           </p>
         </div>
         {/* Background Decorative element */}
-        <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[60%] aspect-square bg-[#39FF14]/[0.02] rounded-full blur-[120px]" />
+        <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[60%] aspect-square bg-[#0EA5E9]/[0.02] rounded-full blur-[120px]" />
       </section>
 
       {/* The Argument: Next.js vs WordPress */}
@@ -69,19 +69,19 @@ export default function WebsitesPage() {
             </h2>
             <div className="space-y-10">
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
-                <h3 className="font-syne font-700 text-[18px] text-[#39FF14] mb-4 uppercase tracking-widest">Speed is Sales</h3>
+                <h3 className="font-syne font-700 text-[18px] text-[#0EA5E9] mb-4 uppercase tracking-widest">Speed is Sales</h3>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed">
                   WordPress sites are slowed down by heavy themes and bloated plugins. A 1-second delay in page load equals a 7% drop in conversions. ForecourIQ sites load in under 500ms.
                 </p>
               </div>
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
-                <h3 className="font-syne font-700 text-[18px] text-[#39FF14] mb-4 uppercase tracking-widest">Security by Default</h3>
+                <h3 className="font-syne font-700 text-[18px] text-[#0EA5E9] mb-4 uppercase tracking-widest">Security by Default</h3>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed">
                   Next.js generates static pages, meaning there is no database for hackers to exploit on the front-end. Your site is practically unhackable compared to standard WP installs.
                 </p>
               </div>
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
-                <h3 className="font-syne font-700 text-[18px] text-[#39FF14] mb-4 uppercase tracking-widest">SEO Superiority</h3>
+                <h3 className="font-syne font-700 text-[18px] text-[#0EA5E9] mb-4 uppercase tracking-widest">SEO Superiority</h3>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed">
                   Google loves performance. Our technical SEO is baked into the code, not added via a plugin. We out-rank the competition because our architecture is cleaner.
                 </p>
@@ -90,15 +90,15 @@ export default function WebsitesPage() {
           </div>
           <div className="lg:col-span-7 flex flex-col justify-center">
             <div className="relative aspect-[4/3] bg-[#07080B] border border-[#252B37] rounded-[2px] p-10 overflow-hidden group">
-              <div className="absolute inset-0 bg-[#39FF14]/[0.03] opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              <div className="absolute inset-0 bg-[#0EA5E9]/[0.03] opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10 space-y-8">
                 <div className="flex justify-between items-center border-b border-[#252B37] pb-6">
                   <span className="font-mono text-[12px] text-[#5C6678] tracking-widest uppercase">Benchmark</span>
-                  <span className="font-mono text-[12px] text-[#39FF14] uppercase">Performance Analysis</span>
+                  <span className="font-mono text-[12px] text-[#0EA5E9] uppercase">Performance Analysis</span>
                 </div>
                 <div className="space-y-6">
                   {[
-                    { label: "ForecourIQ (Next.js 15)", value: 98, color: "#39FF14" },
+                    { label: "ForecourIQ (Next.js 15)", value: 98, color: "#0EA5E9" },
                     { label: "Generic Agency WP Template", value: 42, color: "#252B37" },
                     { label: "Self-built WP Site", value: 28, color: "#252B37" },
                   ].map((item, i) => (
@@ -137,7 +137,7 @@ export default function WebsitesPage() {
               { t: "Unified Integration", b: "Your site is natively connected to the ForecourIQ DMS and all major UK marketplaces from day one." }
             ].map((step, i) => (
               <div key={i} className="space-y-6">
-                <span className="font-mono text-[24px] text-[#39FF14]">0{i+1}</span>
+                <span className="font-mono text-[24px] text-[#0EA5E9]">0{i+1}</span>
                 <h3 className="font-syne font-700 text-[18px] text-[#EDE8DC] uppercase tracking-wide">{step.t}</h3>
                 <p className="font-cormorant font-300 text-[16px] text-[#9DA8B7] leading-relaxed">{step.b}</p>
               </div>
@@ -158,7 +158,7 @@ export default function WebsitesPage() {
                 A showcase of dealerships that chose performance over the status quo.
               </p>
             </div>
-            <Button variant="secondary" href="/case-studies">View all studies</Button>
+            <Button variant="ghost" href="/case-studies">View all studies</Button>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -167,7 +167,7 @@ export default function WebsitesPage() {
                 <div className="aspect-video bg-[#13161C] relative overflow-hidden flex items-center justify-center p-12 text-center">
                   <span className="font-mono text-[10px] text-[#5C6678] uppercase opacity-40">[ Screen capture coming: {project.title} ]</span>
                   {/* Image component would go here in production */}
-                  <div className="absolute inset-0 bg-[#39FF14]/[0.05] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-[#0EA5E9]/[0.05] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
                 <div className="p-10 flex flex-col flex-1">
                   <div className="flex flex-wrap gap-2 mb-6">
@@ -177,7 +177,7 @@ export default function WebsitesPage() {
                       </span>
                     ))}
                   </div>
-                  <h3 className="font-syne font-700 text-[20px] text-[#EDE8DC] mb-4 group-hover:text-[#39FF14] transition-colors">
+                  <h3 className="font-syne font-700 text-[20px] text-[#EDE8DC] mb-4 group-hover:text-[#0EA5E9] transition-colors">
                     {project.title}
                   </h3>
                   <p className="font-cormorant font-300 text-[16px] text-[#9DA8B7] leading-relaxed mb-8 flex-1">
@@ -187,7 +187,7 @@ export default function WebsitesPage() {
                     href={project.url} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="font-mono text-[11px] text-[#39FF14] uppercase tracking-[0.2em] inline-flex items-center group/link"
+                    className="font-mono text-[11px] text-[#0EA5E9] uppercase tracking-[0.2em] inline-flex items-center group/link"
                   >
                     Explore Website
                     <span className="ml-2 transition-transform duration-300 group-hover/link:translate-x-1">→</span>
@@ -210,7 +210,7 @@ export default function WebsitesPage() {
             <Button variant="secondary" href="/pricing">View Pricing</Button>
           </div>
         </div>
-        <div className="absolute bottom-[-20%] left-1/2 -translate-x-1/2 w-[80%] aspect-square bg-[#39FF14]/[0.01] rounded-full blur-[150px]" />
+        <div className="absolute bottom-[-20%] left-1/2 -translate-x-1/2 w-[80%] aspect-square bg-[#0EA5E9]/[0.01] rounded-full blur-[150px]" />
       </section>
     </div>
   );

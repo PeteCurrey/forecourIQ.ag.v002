@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap, ScrollTrigger } from "@/lib/gsap-init";
+import Eyebrow from "@/components/ui/eyebrow";
 
 export default function Stats() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -51,7 +52,8 @@ export default function Stats() {
 
   return (
     <section ref={sectionRef} className="bg-[#07080B] py-[160px] px-6 lg:px-20 overflow-hidden">
-      <div className="max-w-container mx-auto text-center">
+      <div className="max-w-container mx-auto text-center flex flex-col items-center">
+        <Eyebrow className="mb-8">Performance</Eyebrow>
         <p className="font-cormorant font-300 italic text-[22px] text-[#9DA8B7] mb-8">
           Our dealers reduce days-to-sell by an average of
         </p>

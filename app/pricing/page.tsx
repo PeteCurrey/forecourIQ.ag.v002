@@ -178,12 +178,12 @@ export default function PricingPage() {
                 onClick={() => setIsAnnual(!isAnnual)}
                 className="w-14 h-7 bg-[#1C2029] border border-[#252B37] rounded-full p-1 relative transition-colors duration-300"
               >
-                <div className={`w-5 h-5 bg-[#C9A84C] rounded-full transition-all duration-300 ${isAnnual ? 'translate-x-7' : 'translate-x-0'}`} />
+                <div className={`w-5 h-5 bg-[#0EA5E9] rounded-full transition-all duration-300 ${isAnnual ? 'translate-x-7' : 'translate-x-0'}`} />
               </button>
               <span className={`font-syne text-[14px] transition-colors duration-300 ${isAnnual ? 'text-[#EDE8DC]' : 'text-[#5C6678]'}`}>Annual</span>
             </div>
             {isAnnual && (
-              <span className="font-mono text-[11px] text-[#C9A84C] tracking-wider uppercase">
+              <span className="font-mono text-[11px] text-[#0EA5E9] tracking-wider uppercase">
                 Save two months
               </span>
             )}
@@ -193,11 +193,11 @@ export default function PricingPage() {
             {TIERS.map((tier, i) => (
               <div 
                 key={i}
-                className={`relative flex flex-col bg-[#13161C] border ${tier.recommended ? 'border-[#C9A84C]/40' : 'border-[#252B37]'} rounded-[2px] p-10 lg:p-14`}
+                className={`relative flex flex-col bg-[#13161C] border ${tier.recommended ? 'border-[#0EA5E9]/40' : 'border-[#252B37]'} rounded-[2px] p-10 lg:p-14`}
               >
                 {tier.recommended && (
                   <div className="absolute -top-8 left-1/2 -translate-x-1/2">
-                    <span className="font-mono text-[11px] text-[#C9A84C] tracking-[0.16em] uppercase">Recommended</span>
+                    <span className="font-mono text-[11px] text-[#0EA5E9] tracking-[0.16em] uppercase">Recommended</span>
                   </div>
                 )}
                 <h3 className="font-syne font-700 text-[24px] text-[#EDE8DC] uppercase mb-2">{tier.name}</h3>
@@ -213,16 +213,16 @@ export default function PricingPage() {
                 <ul className="space-y-4 flex-1 mb-10">
                   {tier.features.slice(0, 8).map((feature, j) => (
                     <li key={j} className="flex items-center gap-3">
-                      <span className={`font-mono text-[12px] ${feature.active ? 'text-[#EDE8DC]' : 'text-[#353D4C]'}`}>
+                      <span className={`font-mono text-[12px] ${feature.active ? 'text-[#0EA5E9]' : 'text-[#353D4C]'}`}>
                         {feature.active ? '✓' : '—'}
                       </span>
-                      <span className={`font-mono text-[12px] ${feature.active ? 'text-[#EDE8DC]' : 'text-[#353D4C]'}`}>
+                      <span className={`font-mono text-[12px] ${feature.active ? 'text-[#0EA5E9]' : 'text-[#353D4C]'}`}>
                         {feature.label}
                       </span>
                     </li>
                   ))}
                 </ul>
-                <Button variant={tier.recommended ? "gold" : "secondary"} className="w-full" href="/demo">
+                <Button variant={tier.recommended ? "prominent" : "primary"} className="w-full" href="/demo">
                   Start 14-day trial
                 </Button>
               </div>
@@ -240,7 +240,7 @@ export default function PricingPage() {
               <tr className="border-b border-[#252B37]">
                 <th className="py-8 text-left w-1/4"></th>
                 <th className="py-8 text-center w-1/4 font-syne font-700 text-[18px] text-[#EDE8DC]">Starter</th>
-                <th className="py-8 text-center w-1/4 font-syne font-700 text-[18px] text-[#C9A84C]">Professional</th>
+                <th className="py-8 text-center w-1/4 font-syne font-700 text-[18px] text-[#0EA5E9]">Professional</th>
                 <th className="py-8 text-center w-1/4 font-syne font-700 text-[18px] text-[#EDE8DC]">Elite</th>
               </tr>
             </thead>
@@ -248,7 +248,7 @@ export default function PricingPage() {
               {COMPARISON.map((group, i) => (
                 <React.Fragment key={i}>
                   <tr className="bg-[#0D0F14]/30">
-                    <td colSpan={4} className="py-6 px-4 font-mono text-[11px] text-[#C9A84C] uppercase tracking-[0.16em]">
+                    <td colSpan={4} className="py-6 px-4 font-mono text-[11px] text-[#0EA5E9] uppercase tracking-[0.16em]">
                       {group.group}
                     </td>
                   </tr>
@@ -256,7 +256,7 @@ export default function PricingPage() {
                     <tr key={j} className="border-b border-[#252B37]/10 hover:bg-[#EDE8DC]/[0.02] transition-colors">
                       <td className="py-5 px-4 font-cormorant text-[18px] text-[#9DA8B7]">{row.name}</td>
                       {row.values.map((val, k) => (
-                        <td key={k} className={`py-5 text-center font-mono text-[14px] ${val === '✓' ? 'text-[#EDE8DC]' : val === '—' ? 'text-[#353D4C]' : 'text-[#EDE8DC]'}`}>
+                        <td key={k} className={`py-5 text-center font-mono text-[14px] ${val === '✓' ? 'text-[#0EA5E9]' : val === '—' ? 'text-[#353D4C]' : 'text-[#EDE8DC]'}`}>
                           {val}
                         </td>
                       ))}
@@ -280,7 +280,7 @@ export default function PricingPage() {
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
                   className="w-full flex justify-between items-center py-4 text-left group"
                 >
-                  <span className={`font-syne font-700 text-[18px] transition-colors ${openFaq === i ? 'text-[#C9A84C]' : 'text-[#EDE8DC] group-hover:text-[#C9A84C]'}`}>
+                  <span className={`font-syne font-700 text-[18px] transition-colors ${openFaq === i ? 'text-[#0EA5E9]' : 'text-[#EDE8DC] group-hover:text-[#0EA5E9]'}`}>
                     {faq.q}
                   </span>
                   <span className={`font-mono text-[18px] text-[#5C6678] transform transition-transform duration-300 ${openFaq === i ? 'rotate-45' : ''}`}>

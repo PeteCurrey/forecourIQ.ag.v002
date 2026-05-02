@@ -81,7 +81,7 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-            <Button href="/demo" variant="gold">
+            <Button href="/demo" variant="primary">
               Book a Demonstration
             </Button>
             <Button href="/features" variant="ghost">
@@ -96,7 +96,7 @@ export default function Hero() {
         {/* Scroll Cue */}
         <div className="flex flex-col items-start">
           <div className="w-[1px] h-10 bg-[#252B37] relative overflow-hidden mb-4">
-            <div className="scroll-cue-rect absolute top-0 left-[-1.5px] w-1 h-2 bg-[#C9A84C]" />
+            <div className="scroll-cue-rect absolute top-0 left-[-1.5px] w-1 h-2 bg-[#0EA5E9]" />
           </div>
           <span className="font-mono text-[11px] text-[#5C6678] tracking-[0.12em] uppercase">
             Scroll to explore ↓
@@ -105,13 +105,13 @@ export default function Hero() {
 
         {/* Data Pills */}
         <div className="flex flex-col gap-3">
-          <div className="px-5 py-3 border border-[#C9A84C]/25 rounded-[2px] font-mono text-[11px] text-[#EDE8DC] uppercase tracking-[0.12em] bg-[#C9A84C]/[0.08] backdrop-blur-sm">
+          <div className="px-5 py-3 border border-[#0EA5E9]/25 rounded-[2px] font-mono text-[11px] text-[#EDE8DC] uppercase tracking-[0.12em] bg-[#0EA5E9]/[0.08] backdrop-blur-sm">
             100+ Active Dealers
           </div>
-          <div className="px-5 py-3 border border-[#C9A84C]/25 rounded-[2px] font-mono text-[11px] text-[#EDE8DC] uppercase tracking-[0.12em] bg-[#C9A84C]/[0.08] backdrop-blur-sm">
+          <div className="px-5 py-3 border border-[#0EA5E9]/25 rounded-[2px] font-mono text-[11px] text-[#EDE8DC] uppercase tracking-[0.12em] bg-[#0EA5E9]/[0.08] backdrop-blur-sm">
             48hr Onboarding
           </div>
-          <div className="px-5 py-3 border border-[#C9A84C]/25 rounded-[2px] font-mono text-[11px] text-[#EDE8DC] uppercase tracking-[0.12em] bg-[#C9A84C]/[0.08] backdrop-blur-sm">
+          <div className="px-5 py-3 border border-[#0EA5E9]/25 rounded-[2px] font-mono text-[11px] text-[#EDE8DC] uppercase tracking-[0.12em] bg-[#0EA5E9]/[0.08] backdrop-blur-sm">
             14-Day Trial
           </div>
         </div>

@@ -40,9 +40,9 @@ export default function ClosingCTA() {
           Enquire.
         </h2>
 
-        <div className="w-[200px] h-[1px] bg-[#C9A84C] mb-16" />
+        <div className="w-[200px] h-[1px] bg-[#0EA5E9] mb-16" />
 
-        <Button href="/demo" variant="gold" className="px-12 py-4">
+        <Button href="/demo" variant="primary" className="px-12 py-4">
           Book a Demonstration
         </Button>
 

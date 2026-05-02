@@ -59,13 +59,13 @@ export default function DailyBriefingPage() {
             </h2>
             <div className="space-y-10">
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
-                <h3 className="font-syne font-700 text-[18px] text-[#39FF14] mb-4 uppercase tracking-widest">Industry Monitoring</h3>
+                <h3 className="font-syne font-700 text-[18px] text-[#0EA5E9] mb-4 uppercase tracking-widest">Industry Monitoring</h3>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed">
                   We monitor global automotive news feeds, DVSA recall databases, and OEM press releases. Get instant updates on new model launches or compliance changes that affect your current stock value.
                 </p>
               </div>
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
-                <h3 className="font-syne font-700 text-[18px] text-[#39FF14] mb-4 uppercase tracking-widest">Action Required</h3>
+                <h3 className="font-syne font-700 text-[18px] text-[#0EA5E9] mb-4 uppercase tracking-widest">Action Required</h3>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed">
                   Clear directives for the day. Which vehicles have crossed the 45-day threshold? Which hot prospects need an immediate follow-up call? Which of your vehicles was just subject to a manufacturer recall?
                 </p>
@@ -82,11 +82,11 @@ export default function DailyBriefingPage() {
               <div className="flex-1 space-y-6">
                 
                 <div>
-                  <h4 className="font-syne font-700 text-[14px] text-[#39FF14] uppercase tracking-wider mb-3">Overnight Leads</h4>
+                  <h4 className="font-syne font-700 text-[14px] text-[#0EA5E9] uppercase tracking-wider mb-3">Overnight Leads</h4>
                   <ul className="space-y-2">
                     <li className="flex justify-between font-mono text-[11px] text-[#9DA8B7]">
                       <span>1. James K. (Porsche 911) - Web</span>
-                      <span className="text-[#3DB87A]">Hot Lead</span>
+                      <span className="text-[#0EA5E9]">Hot Lead</span>
                     </li>
                     <li className="flex justify-between font-mono text-[11px] text-[#9DA8B7]">
                       <span>2. Simon P. (Aston Martin DB11) - AutoTrader</span>
@@ -98,7 +98,7 @@ export default function DailyBriefingPage() {
                 <div className="pt-4 border-t border-[#252B37]/20">
                   <h4 className="font-syne font-700 text-[14px] text-[#C94040] uppercase tracking-wider mb-3">Industry Alert: Recall</h4>
                   <p className="font-cormorant font-300 text-[16px] text-[#EDE8DC] leading-relaxed">
-                    <span className="text-[#C94040]">WARNING:</span> DVSA has issued a recall for <span className="text-[#39FF14]">Porsche Taycan (2020-2022)</span> regarding high-voltage battery modules. You currently hold 1 of these in stock. Stop-sale recommended until inspected.
+                    <span className="text-[#C94040]">WARNING:</span> DVSA has issued a recall for <span className="text-[#0EA5E9]">Porsche Taycan (2020-2022)</span> regarding high-voltage battery modules. You currently hold 1 of these in stock. Stop-sale recommended until inspected.
                   </p>
                 </div>
 

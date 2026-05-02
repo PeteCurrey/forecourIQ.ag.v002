@@ -8,7 +8,7 @@ function cn(...inputs: ClassValue[]) {
 }
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "ghost" | "gold";
+  variant?: "primary" | "secondary" | "ghost" | "gold" | "prominent";
   href?: string;
   children: React.ReactNode;
 }
@@ -23,10 +23,11 @@ export default function Button({
   const baseStyles = "inline-flex items-center justify-center transition-all duration-300 rounded-[2px] font-syne font-700 text-[13px] tracking-[0.08em] uppercase whitespace-nowrap";
   
   const variants = {
-    primary: "bg-[#39FF14] text-[#07080B] px-6 py-3 hover:bg-[#C79260]",
-    secondary: "bg-transparent text-[#EDE8DC] border border-[#252B37] px-6 py-3 hover:border-[#EDE8DC]",
-    ghost: "bg-transparent text-[#EDE8DC] font-400 normal-case tracking-normal hover:text-[#39FF14] p-0 h-auto",
-    gold: "bg-[#C9A84C] text-[#07080B] px-6 py-3 hover:bg-[#D4B86A]",
+    primary: "bg-transparent text-[#EDE8DC] border border-[#0EA5E9] px-[28px] py-[12px] hover:bg-[#0EA5E9]/[0.08] hover:text-white",
+    secondary: "bg-transparent text-[#EDE8DC] border border-[#252B37] px-6 py-3 hover:border-[#0EA5E9] hover:text-[#0EA5E9]",
+    ghost: "bg-transparent text-[#EDE8DC] font-400 normal-case tracking-normal hover:text-[#0EA5E9] p-0 h-auto",
+    gold: "bg-transparent text-[#EDE8DC] border border-[#0EA5E9] px-[28px] py-[12px] hover:bg-[#0EA5E9]/[0.08] hover:text-white",
+    prominent: "bg-transparent text-[#EDE8DC] border-[1.5px] border-[#0EA5E9] px-[28px] py-[12px] hover:bg-[#0EA5E9]/[0.08] hover:text-white",
   };
 
   const content = (

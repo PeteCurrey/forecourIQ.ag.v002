@@ -48,7 +48,7 @@ export default function IntelligentBuyingPage() {
             ForecourIQ continuously analyzes high-end market trends, global price movements, and auction data to spot appreciating prestige assets before the curve. Stop guessing, start investing.
           </p>
         </div>
-        <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[60%] aspect-square bg-[#3DB87A]/[0.02] rounded-full blur-[120px]" />
+        <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[60%] aspect-square bg-[#0EA5E9]/[0.02] rounded-full blur-[120px]" />
       </section>
 
       {/* Deep Dive Feature */}
@@ -60,13 +60,13 @@ export default function IntelligentBuyingPage() {
             </h2>
             <div className="space-y-10">
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
-                <h3 className="font-syne font-700 text-[18px] text-[#39FF14] mb-4 uppercase tracking-widest">Trend & Asset Analysis</h3>
+                <h3 className="font-syne font-700 text-[18px] text-[#0EA5E9] mb-4 uppercase tracking-widest">Trend & Asset Analysis</h3>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed">
                   We process millions of data points from global auctions to identify macro trends. Detect when specific limited-run models transition from depreciation to appreciation.
                 </p>
               </div>
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
-                <h3 className="font-syne font-700 text-[18px] text-[#39FF14] mb-4 uppercase tracking-widest">Margin Forecasting</h3>
+                <h3 className="font-syne font-700 text-[18px] text-[#0EA5E9] mb-4 uppercase tracking-widest">Margin Forecasting</h3>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed">
                   Input a direct-to-seller or auction price, and our system calculates your projected net margin based on historic prep costs for that specific marque, alongside the current retail ceiling.
                 </p>
@@ -78,15 +78,15 @@ export default function IntelligentBuyingPage() {
             <div className="relative aspect-[4/3] bg-[#07080B] border border-[#252B37] rounded-[2px] p-6 lg:p-10 overflow-hidden flex flex-col">
               <div className="flex justify-between items-center border-b border-[#252B37] pb-6 mb-6">
                 <span className="font-mono text-[12px] text-[#5C6678] tracking-widest uppercase">Command Centre</span>
-                <span className="font-mono text-[12px] text-[#3DB87A] uppercase flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#3DB87A] animate-pulse" />
+                <span className="font-mono text-[12px] text-[#0EA5E9] uppercase flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#0EA5E9] animate-pulse-slow" />
                   Live Feeds
                 </span>
               </div>
               <div className="flex-1 space-y-4">
                 {[
-                  { v: "Porsche 911 GT3 (992) 2022", d: "APPRECIATING", r: "Up 4.2% (90d)", m: "+£12.5k", a: "STRONG BUY", c: "#3DB87A" },
-                  { v: "Aston Martin Vantage V8 2020", d: "STABLE", r: "Up 1.1% (90d)", m: "+£8.2k", a: "BUY", c: "#3DB87A" },
+                  { v: "Porsche 911 GT3 (992) 2022", d: "APPRECIATING", r: "Up 4.2% (90d)", m: "+£12.5k", a: "STRONG BUY", c: "#0EA5E9" },
+                  { v: "Aston Martin Vantage V8 2020", d: "STABLE", r: "Up 1.1% (90d)", m: "+£8.2k", a: "BUY", c: "#0EA5E9" },
                   { v: "Ferrari Roma 2021", d: "SOFTENING", r: "Down 2.4% (90d)", m: "+£6.5k", a: "HOLD", c: "#D4922A" },
                   { v: "Bentley Continental GT 2019", d: "DEPRECIATING", r: "Down 5.1% (90d)", m: "+£4.1k", a: "PASS", c: "#C94040" },
                 ].map((row, i) => (

@@ -59,8 +59,8 @@ export default function BlogPage() {
                 </span>
               </div>
               <div className="p-12 lg:p-20 flex flex-col justify-center">
-                <span className="font-mono text-[11px] text-[#39FF14] uppercase tracking-[0.2em]">Featured Post · {featuredPost.category}</span>
-                <h2 className="font-syne font-700 text-[32px] lg:text-[44px] text-[#EDE8DC] mt-6 mb-8 leading-tight group-hover:text-[#39FF14] transition-colors">
+                <span className="font-mono text-[11px] text-[#0EA5E9] uppercase tracking-[0.2em]">Featured Post · {featuredPost.category}</span>
+                <h2 className="font-syne font-700 text-[32px] lg:text-[44px] text-[#EDE8DC] mt-6 mb-8 leading-tight group-hover:text-[#0EA5E9] transition-colors">
                   {featuredPost.title}
                 </h2>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed mb-10 max-w-lg">
@@ -116,8 +116,8 @@ function BlogCard({ post }: { post: BlogPost }) {
       href={`/blog/${post.slug}`}
       className="blog-card group flex flex-col bg-[#0D0F14] border border-[#252B37] rounded-[2px] p-8 relative overflow-hidden"
     >
-      <span className="font-mono text-[11px] text-[#39FF14] uppercase tracking-[0.16em]">{post.category}</span>
-      <h3 className="font-syne font-700 text-[20px] text-[#EDE8DC] mt-4 mb-4 leading-tight group-hover:text-[#39FF14] transition-colors">
+      <span className="font-mono text-[11px] text-[#0EA5E9] uppercase tracking-[0.16em]">{post.category}</span>
+      <h3 className="font-syne font-700 text-[20px] text-[#EDE8DC] mt-4 mb-4 leading-tight group-hover:text-[#0EA5E9] transition-colors">
         {post.title}
       </h3>
       <p className="font-cormorant font-300 text-[16px] text-[#9DA8B7] leading-relaxed mb-8 flex-1">
@@ -131,7 +131,7 @@ function BlogCard({ post }: { post: BlogPost }) {
       {/* Hover Line */}
       <div 
         ref={lineRef}
-        className="absolute bottom-0 left-0 h-[1px] bg-[#39FF14] opacity-40 w-0" 
+        className="absolute bottom-0 left-0 h-[1px] bg-[#0EA5E9] opacity-40 w-0" 
       />
     </Link>
   );

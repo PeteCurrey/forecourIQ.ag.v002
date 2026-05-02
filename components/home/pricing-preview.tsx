@@ -86,12 +86,12 @@ export default function PricingPreview() {
               onClick={() => setIsAnnual(!isAnnual)}
               className="w-14 h-7 bg-[#1C2029] border border-[#252B37] rounded-full p-1 relative transition-colors duration-300"
             >
-              <div className={`w-5 h-5 bg-[#39FF14] rounded-full transition-all duration-300 ${isAnnual ? 'translate-x-7' : 'translate-x-0'}`} />
+              <div className={`w-5 h-5 bg-[#0EA5E9] rounded-full transition-all duration-300 ${isAnnual ? 'translate-x-7' : 'translate-x-0'}`} />
             </button>
             <span className={`font-syne text-[14px] transition-colors duration-300 ${isAnnual ? 'text-[#EDE8DC]' : 'text-[#5C6678]'}`}>Annual</span>
           </div>
           {isAnnual && (
-            <span className="font-mono text-[11px] text-[#3DB87A] tracking-wider uppercase animate-fade-in">
+            <span className="font-mono text-[11px] text-[#0EA5E9] tracking-wider uppercase animate-fade-in">
               Save two months
             </span>
           )}
@@ -102,13 +102,13 @@ export default function PricingPreview() {
           {TIERS.map((tier, i) => (
             <div 
               key={i}
-              className={`relative flex flex-col bg-[#13161C] border ${tier.recommended ? 'border-[#39FF14]/40' : 'border-[#252B37]'} rounded-[2px] p-10 lg:p-14`}
+              className={`relative flex flex-col bg-[#13161C] border ${tier.recommended ? 'border-[#0EA5E9]/40' : 'border-[#252B37]'} rounded-[2px] p-10 lg:p-14`}
             >
               {tier.recommended && (
                 <>
-                  <div className="absolute top-0 left-0 w-full h-[1px] bg-[#39FF14]" />
+                  <div className="absolute top-0 left-0 w-full h-[1px] bg-[#0EA5E9]" />
                   <div className="absolute -top-8 left-1/2 -translate-x-1/2">
-                    <span className="font-mono text-[11px] text-[#39FF14] tracking-[0.16em] uppercase">Recommended</span>
+                    <span className="font-mono text-[11px] text-[#0EA5E9] tracking-[0.16em] uppercase">Recommended</span>
                   </div>
                 </>
               )}
@@ -137,7 +137,7 @@ export default function PricingPreview() {
               <ul className="space-y-4 flex-1 mb-10">
                 {tier.features.map((feature, j) => (
                   <li key={j} className="flex items-center gap-3">
-                    <span className={`font-mono text-[12px] ${feature.active ? 'text-[#3DB87A]' : 'text-[#353D4C]'}`}>
+                    <span className={`font-mono text-[12px] ${feature.active ? 'text-[#0EA5E9]' : 'text-[#353D4C]'}`}>
                       {feature.active ? '✓' : '—'}
                     </span>
                     <span className={`font-mono text-[12px] ${feature.active ? 'text-[#EDE8DC]' : 'text-[#353D4C]'}`}>
@@ -148,7 +148,7 @@ export default function PricingPreview() {
               </ul>
 
               <Button 
-                variant={tier.recommended ? "primary" : "secondary"} 
+                variant={tier.recommended ? "prominent" : "primary"} 
                 className="w-full"
                 href={`/enquire?plan=${tier.name.toLowerCase()}`}
               >

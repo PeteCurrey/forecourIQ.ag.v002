@@ -18,12 +18,20 @@ export default {
         silver: "#9DA8B7",
         pewter: "#5C6678",
         muted: "#353D4C",
-        electric: "#39FF14",
-        gold: "#C9A84C",
+        electric: "#0EA5E9",
         signal: {
           positive: "#3DB87A",
           hold: "#D4922A",
           negative: "#C94040",
+        },
+      },
+      animation: {
+        "pulse-slow": "pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      },
+      keyframes: {
+        "pulse-slow": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.4" },
         },
       },
       fontFamily: {

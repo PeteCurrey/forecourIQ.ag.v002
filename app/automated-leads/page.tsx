@@ -59,13 +59,13 @@ export default function AutomatedLeadsPage() {
             </h2>
             <div className="space-y-10">
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
-                <h3 className="font-syne font-700 text-[18px] text-[#39FF14] mb-4 uppercase tracking-widest">Unified Lead Inbox</h3>
+                <h3 className="font-syne font-700 text-[18px] text-[#0EA5E9] mb-4 uppercase tracking-widest">Unified Lead Inbox</h3>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed">
                   Stop checking six different portals. Enquiries from your website, AutoTrader, eBay Motors, and WhatsApp all land in one centralized dashboard.
                 </p>
               </div>
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
-                <h3 className="font-syne font-700 text-[18px] text-[#39FF14] mb-4 uppercase tracking-widest">Instant Auto-Response</h3>
+                <h3 className="font-syne font-700 text-[18px] text-[#0EA5E9] mb-4 uppercase tracking-widest">Instant Auto-Response</h3>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed">
                   When a lead comes in at 11 PM, the system instantly replies via SMS or email with the vehicle brochure, a walkaround video link, and an option to book a morning call.
                 </p>
@@ -77,7 +77,7 @@ export default function AutomatedLeadsPage() {
             <div className="relative aspect-[4/3] bg-[#07080B] border border-[#252B37] rounded-[2px] p-6 lg:p-10 overflow-hidden flex flex-col">
               <div className="flex justify-between items-center border-b border-[#252B37] pb-6 mb-6">
                 <span className="font-mono text-[12px] text-[#5C6678] tracking-widest uppercase">Unified Inbox</span>
-                <span className="font-mono text-[12px] text-[#3DB87A] uppercase">3 Unread</span>
+                <span className="font-mono text-[12px] text-[#0EA5E9] uppercase">3 Unread</span>
               </div>
               <div className="flex-1 space-y-4">
                 {[
@@ -85,7 +85,7 @@ export default function AutomatedLeadsPage() {
                   { n: "Sarah Jenkins", s: "Website", t: "14 mins ago", v: "Aston Martin Vantage V8", stat: "Auto-replied" },
                   { n: "Mark Taylor", s: "eBay", t: "1 hour ago", v: "Ferrari Roma", stat: "In discussion" },
                 ].map((lead, i) => (
-                  <div key={i} className="flex flex-col border border-[#252B37] bg-[#0D0F14] p-4 rounded-[2px] border-l-4 border-l-[#39FF14]">
+                  <div key={i} className="flex flex-col border border-[#252B37] bg-[#0D0F14] p-4 rounded-[2px] border-l-4 border-l-[#0EA5E9]">
                     <div className="flex justify-between mb-2">
                       <span className="font-syne font-700 text-[14px] text-[#EDE8DC]">{lead.n}</span>
                       <span className="font-mono text-[10px] text-[#5C6678]">{lead.t}</span>
@@ -94,7 +94,7 @@ export default function AutomatedLeadsPage() {
                       <span className="font-cormorant font-300 text-[14px] text-[#9DA8B7]">Re: {lead.v}</span>
                       <div className="flex gap-4 items-center">
                         <span className="font-mono text-[10px] text-[#5C6678] bg-[#252B37]/30 px-2 py-1 rounded-full">{lead.s}</span>
-                        <span className="font-mono text-[10px] text-[#39FF14] uppercase">{lead.stat}</span>
+                        <span className="font-mono text-[10px] text-[#0EA5E9] uppercase">{lead.stat}</span>
                       </div>
                     </div>
                   </div>

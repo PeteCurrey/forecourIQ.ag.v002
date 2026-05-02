@@ -133,7 +133,7 @@ export default function ProductShowcase() {
                 <div 
                   key={i}
                   className={`w-2 h-2 border transition-all duration-500 ${
-                    activeModule === i ? 'bg-[#C9A84C] border-[#C9A84C]' : 'bg-[#252B37] border-[#252B37]'
+                    activeModule === i ? 'bg-[#0EA5E9] border-[#0EA5E9]' : 'bg-[#252B37] border-[#252B37]'
                   }`}
                 />
               ))}
@@ -172,7 +172,7 @@ export default function ProductShowcase() {
                 <div className="w-full h-full bg-[#0D0F14] border border-[#252B37] rounded-[2px] flex flex-col">
                   <div className="h-12 border-b border-[#252B37] flex items-center px-6 justify-between">
                     <div className="flex gap-4">
-                      <div className="w-16 h-2 bg-[#C9A84C]" />
+                      <div className="w-16 h-2 bg-[#0EA5E9]" />
                       <div className="w-12 h-2 bg-[#252B37]" />
                       <div className="w-12 h-2 bg-[#252B37]" />
                     </div>
@@ -198,9 +198,9 @@ export default function ProductShowcase() {
                 {/* Command Centre Mockup */}
                 <div className="w-full h-full bg-[#0D0F14] border border-[#252B37] rounded-[2px] p-6 flex flex-col gap-6">
                   <div className="flex justify-between items-center">
-                    <span className="font-mono text-[10px] text-[#C9A84C] tracking-widest">BUYING SIGNALS</span>
-                    <div className="w-4 h-4 bg-[#39FF14]/20 rounded-full flex items-center justify-center">
-                      <div className="w-1.5 h-1.5 bg-[#39FF14] rounded-full animate-pulse" />
+                    <span className="font-mono text-[10px] text-[#0EA5E9] tracking-widest">BUYING SIGNALS</span>
+                    <div className="w-4 h-4 bg-[#0EA5E9]/20 rounded-full flex items-center justify-center">
+                      <div className="w-1.5 h-1.5 bg-[#0EA5E9] rounded-full animate-pulse-slow" />
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-6 flex-1">
@@ -208,7 +208,7 @@ export default function ProductShowcase() {
                       {[1, 2, 3, 4].map(i => (
                         <div key={i} className="p-3 bg-[#1C2029] border border-[#252B37]/40 rounded-[2px] flex justify-between">
                           <div className="w-20 h-2 bg-[#9DA8B7]/50" />
-                          <div className="w-8 h-2 bg-[#C9A84C]" />
+                          <div className="w-8 h-2 bg-[#0EA5E9]" />
                         </div>
                       ))}
                     </div>
@@ -221,7 +221,7 @@ export default function ProductShowcase() {
                       <div className="h-24 bg-[#1C2029] border border-[#252B37]/40 p-4">
                         <div className="w-full h-full border-b border-l border-[#252B37] relative">
                           <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                            <path d="M0,80 L20,60 L40,70 L60,40 L80,50 L100,20" fill="none" stroke="#39FF14" strokeWidth="2" />
+                            <path d="M0,80 L20,60 L40,70 L60,40 L80,50 L100,20" fill="none" stroke="#0EA5E9" strokeWidth="2" />
                           </svg>
                         </div>
                       </div>

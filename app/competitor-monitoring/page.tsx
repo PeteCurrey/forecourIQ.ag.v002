@@ -59,13 +59,13 @@ export default function CompetitorMonitoringPage() {
             </h2>
             <div className="space-y-10">
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
-                <h3 className="font-syne font-700 text-[18px] text-[#39FF14] mb-4 uppercase tracking-widest">Price Drop Alerts</h3>
+                <h3 className="font-syne font-700 text-[18px] text-[#0EA5E9] mb-4 uppercase tracking-widest">Price Drop Alerts</h3>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed">
                   If a monitored dealer drops the price of a vehicle that directly competes with one in your inventory, you get notified instantly so you can adjust strategy.
                 </p>
               </div>
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
-                <h3 className="font-syne font-700 text-[18px] text-[#39FF14] mb-4 uppercase tracking-widest">Stock Velocity Tracking</h3>
+                <h3 className="font-syne font-700 text-[18px] text-[#0EA5E9] mb-4 uppercase tracking-widest">Stock Velocity Tracking</h3>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed">
                   See exactly how many days a competitor&apos;s vehicles sit on the forecourt before selling. Learn from their slow movers to optimize your own buying.
                 </p>
@@ -77,16 +77,16 @@ export default function CompetitorMonitoringPage() {
             <div className="relative aspect-[4/3] bg-[#07080B] border border-[#252B37] rounded-[2px] p-6 lg:p-10 overflow-hidden flex flex-col">
               <div className="flex justify-between items-center border-b border-[#252B37] pb-6 mb-6">
                 <span className="font-mono text-[12px] text-[#5C6678] tracking-widest uppercase">Competitor Dashboard</span>
-                <span className="font-mono text-[12px] text-[#39FF14] uppercase flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#39FF14] animate-pulse" />
+                <span className="font-mono text-[12px] text-[#0EA5E9] uppercase flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#0EA5E9] animate-pulse" />
                   Live Sync
                 </span>
               </div>
               <div className="flex-1 space-y-4">
                 {[
                   { d: "Direct Motors", action: "Price Drop", v: "Aston Martin DB11 2021", old: "£98,000", new: "£94,500", c: "#D4922A" },
-                  { d: "Elite Cars Ltd", action: "Sold", v: "Porsche 911 GT3 (992) 2022", old: "£185,000", new: "21 Days to Sell", c: "#3DB87A" },
-                  { d: "Yorkshire Prestige", action: "New Stock", v: "Ferrari F8 Tributo", old: "Listed Today", new: "£210,990", c: "#39FF14" },
+                  { d: "Elite Cars Ltd", action: "Sold", v: "Porsche 911 GT3 (992) 2022", old: "£185,000", new: "21 Days to Sell", c: "#0EA5E9" },
+                  { d: "Yorkshire Prestige", action: "New Stock", v: "Ferrari F8 Tributo", old: "Listed Today", new: "£210,990", c: "#0EA5E9" },
                 ].map((row, i) => (
                   <div key={i} className="flex flex-col border-b border-[#252B37]/10 pb-4">
                     <div className="flex justify-between items-center mb-2">

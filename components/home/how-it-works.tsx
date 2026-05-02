@@ -89,10 +89,10 @@ export default function HowItWorks() {
               {/* Node Anchor */}
               <div 
                 className={`absolute top-[-4.5px] left-0 w-[9px] h-[9px] border rounded-[1px] bg-[#07080B] z-20 transition-colors duration-500 ${
-                  i === 0 ? "border-[#C9A84C] bg-[#C9A84C]" : "border-[#252B37]"
+                  i === 0 ? "border-[#0EA5E9] bg-[#0EA5E9]" : "border-[#252B37]"
                 }`} 
               />
-              <span className="font-mono text-[13px] text-[#C9A84C] tracking-[0.16em] uppercase mb-8 block">
+              <span className="font-mono text-[13px] text-[#0EA5E9] tracking-[0.16em] uppercase mb-8 block">
                 {step.day}
               </span>
               <h3 className="font-syne font-700 text-[28px] text-[#EDE8DC] mb-6 leading-tight">
@@ -104,7 +104,7 @@ export default function HowItWorks() {
               <ul className="space-y-3">
                 {step.deliverables.map((item, j) => (
                   <li key={j} className="flex items-center gap-3">
-                    <div className="w-1 h-1 bg-[#C9A84C] opacity-60" />
+                    <div className="w-1 h-1 bg-[#0EA5E9] opacity-60" />
                     <span className="font-mono text-[11px] text-[#5C6678] tracking-wider uppercase">
                       {item}
                     </span>
@@ -116,7 +116,7 @@ export default function HowItWorks() {
         </div>
 
         {/* Footer Note */}
-        <div className="mt-20 pt-10 border-t border-[#C9A84C]/20">
+        <div className="mt-20 pt-10 border-t border-[#0EA5E9]/20">
           <p className="font-cormorant font-300 italic text-[18px] text-[#EDE8DC] text-center mb-4">
             &quot;Most dealers see a measurable change in stock turn within the first 30 days.&quot;
           </p>

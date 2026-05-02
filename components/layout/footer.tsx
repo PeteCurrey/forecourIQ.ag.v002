@@ -54,7 +54,7 @@ export default function Footer() {
             <span className="font-syne font-700 text-[18px] text-[#EDE8DC] tracking-[-0.04em]">
               Forecour
             </span>
-            <span className="font-syne font-700 text-[18px] text-[#39FF14] tracking-[-0.04em]">
+            <span className="font-syne font-700 text-[18px] text-[#0EA5E9] tracking-[-0.04em]">
               IQ
             </span>
           </Link>
@@ -70,7 +70,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {FOOTER_LINKS.map((group) => (
             <div key={group.title}>
-              <h4 className="font-mono text-[11px] text-[#39FF14] uppercase tracking-[0.16em] mb-8">
+              <h4 className="font-mono text-[11px] text-[#0EA5E9] uppercase tracking-[0.16em] mb-8">
                 {group.title}
               </h4>
               <ul className="space-y-4">
@@ -78,7 +78,7 @@ export default function Footer() {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="font-syne font-400 text-[14px] text-[#9DA8B7] hover:text-[#EDE8DC] transition-colors duration-200"
+                      className="font-syne font-400 text-[14px] text-[#9DA8B7] hover:text-[#0EA5E9] transition-colors duration-200"
                     >
                       {link.label}
                     </Link>

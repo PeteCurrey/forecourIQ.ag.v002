@@ -49,30 +49,30 @@ export default function CaseStudiesPage() {
       <section className="reveal-section bg-[#0D0F14] pt-[80px] pb-[180px] px-6 lg:px-20 border-y border-[#252B37]/30">
         <div className="max-w-container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20">
           <div className="lg:col-span-6">
-            <span className="font-mono text-[11px] text-[#C9A84C] uppercase tracking-[0.2em] mb-6 block">Featured Study · Sheffield, UK</span>
+            <span className="font-mono text-[11px] text-[#0EA5E9] uppercase tracking-[0.2em] mb-6 block">Featured Study · Sheffield, UK</span>
             <h2 className="font-syne font-700 text-[32px] lg:text-[56px] text-[#EDE8DC] leading-tight mb-8">
               Heritage Motor Group
             </h2>
-            <p className="font-cormorant font-600 italic text-[28px] text-[#EDE8DC] mb-12 leading-[1.2] border-l-2 border-[#C9A84C] pl-6">
+            <p className="font-cormorant font-600 italic text-[28px] text-[#EDE8DC] mb-12 leading-[1.2] border-l-2 border-[#0EA5E9] pl-6">
               Moving to ForecourIQ wasn&apos;t just a website upgrade. It was an operational reset. We reduced our average days-to-sell by 60% in the first quarter.
             </p>
             
             <div className="grid grid-cols-2 gap-8 mb-12">
               <div className="p-8 bg-[#07080B] border border-[#252B37] rounded-[2px]">
                 <span className="font-mono text-[10px] text-[#5C6678] uppercase mb-2 block">Days to Sell</span>
-                <span className="font-syne font-700 text-[32px] text-[#39FF14]">-60%</span>
+                <span className="font-syne font-700 text-[32px] text-[#0EA5E9]">-60%</span>
               </div>
               <div className="p-8 bg-[#07080B] border border-[#252B37] rounded-[2px]">
                 <span className="font-mono text-[10px] text-[#5C6678] uppercase mb-2 block">Enquiry Volume</span>
-                <span className="font-syne font-700 text-[32px] text-[#39FF14]">+240%</span>
+                <span className="font-syne font-700 text-[32px] text-[#0EA5E9]">+240%</span>
               </div>
               <div className="p-8 bg-[#07080B] border border-[#252B37] rounded-[2px]">
                 <span className="font-mono text-[10px] text-[#5C6678] uppercase mb-2 block">Stock Turn</span>
-                <span className="font-syne font-700 text-[32px] text-[#39FF14]">3.2x</span>
+                <span className="font-syne font-700 text-[32px] text-[#0EA5E9]">3.2x</span>
               </div>
               <div className="p-8 bg-[#07080B] border border-[#252B37] rounded-[2px]">
                 <span className="font-mono text-[10px] text-[#5C6678] uppercase mb-2 block">Portals ROI</span>
-                <span className="font-syne font-700 text-[32px] text-[#39FF14]">14:1</span>
+                <span className="font-syne font-700 text-[32px] text-[#0EA5E9]">14:1</span>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function CaseStudiesPage() {
                 Page loads dropped to 400ms. SEO traffic increased by 240% within 90 days. The intelligent buying signals allowed them to source three vehicles per month that they previously would have missed, with an average margin of £3,200 per unit.
               </p>
             </div>
-            <Button variant="gold" href="/demo">Read Full Analysis</Button>
+            <Button variant="primary" href="/demo">Read Full Analysis</Button>
           </div>
         </div>
       </section>
@@ -132,20 +132,20 @@ export default function CaseStudiesPage() {
                 tags: ["Operations", "DMS"]
               }
             ].map((study, i) => (
-              <div key={i} className="p-12 bg-[#0D0F14] border border-[#252B37] rounded-[2px] hover:border-[#C9A84C]/40 transition-colors group">
+              <div key={i} className="p-12 bg-[#0D0F14] border border-[#252B37] rounded-[2px] hover:border-[#0EA5E9]/40 transition-colors group">
                 <div className="flex flex-wrap gap-2 mb-8">
                   {study.tags.map((tag, j) => (
-                    <span key={j} className="px-3 py-1 border border-[#252B37] rounded-full font-mono text-[9px] text-[#5C6678] uppercase tracking-wider group-hover:border-[#39FF14]/20 transition-colors">
+                    <span key={j} className="px-3 py-1 border border-[#252B37] rounded-full font-mono text-[9px] text-[#5C6678] uppercase tracking-wider group-hover:border-[#0EA5E9]/20 transition-colors">
                       {tag}
                     </span>
                   ))}
                 </div>
                 <h3 className="font-syne font-700 text-[24px] text-[#EDE8DC] mb-2">{study.name}</h3>
-                <p className="font-mono text-[14px] text-[#C9A84C] mb-6 uppercase tracking-wider">{study.metric}</p>
+                <p className="font-mono text-[14px] text-[#0EA5E9] mb-6 uppercase tracking-wider">{study.metric}</p>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed mb-10">
                   {study.tagline}
                 </p>
-                <a href="#" className="font-mono text-[11px] text-[#EDE8DC] uppercase tracking-[0.2em] inline-flex items-center group-hover:text-[#C9A84C] transition-colors">
+                <a href="#" className="font-mono text-[11px] text-[#EDE8DC] uppercase tracking-[0.2em] inline-flex items-center group-hover:text-[#0EA5E9] transition-colors">
                   View Study →
                 </a>
               </div>

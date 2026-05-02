@@ -160,7 +160,7 @@ export default async function ComparePage({ params }: { params: Promise<{ compet
             <thead>
               <tr className="border-b border-[#252B37]">
                 <th className="py-8 text-left w-2/5 font-mono text-[11px] text-[#5C6678] uppercase">Feature</th>
-                <th className="py-8 text-center w-[30%] font-syne font-700 text-[18px] text-[#39FF14]">ForecourIQ</th>
+                <th className="py-8 text-center w-[30%] font-syne font-700 text-[18px] text-[#0EA5E9]">ForecourIQ</th>
                 <th className="py-8 text-center w-[30%] font-syne font-700 text-[18px] text-[#EDE8DC]">{competitor.name}</th>
               </tr>
             </thead>
@@ -189,7 +189,7 @@ export default async function ComparePage({ params }: { params: Promise<{ compet
               { t: "Switchover", b: "A clean cut-over with 1:1 URL redirects to protect your SEO ranking during the transition." }
             ].map((step, i) => (
               <div key={i} className="space-y-6">
-                <span className="font-mono text-[24px] text-[#39FF14]">0{i+1}</span>
+                <span className="font-mono text-[24px] text-[#0EA5E9]">0{i+1}</span>
                 <h3 className="font-syne font-700 text-[18px] text-[#EDE8DC] uppercase tracking-wide">{step.t}</h3>
                 <p className="font-cormorant font-300 text-[16px] text-[#9DA8B7] leading-relaxed">{step.b}</p>
               </div>
