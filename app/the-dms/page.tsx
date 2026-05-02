@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "@/lib/gsap-init";
 import Eyebrow from "@/components/ui/eyebrow";
-import Button from "@/components/ui/button";
 import ClosingCTA from "@/components/home/closing-cta";
 
 export default function DMSPage() {

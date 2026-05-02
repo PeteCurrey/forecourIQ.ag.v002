@@ -45,7 +45,7 @@ export default function CompetitorMonitoringPage() {
             Market Intelligence.<br />See what they sell, when they drop.
           </h1>
           <p className="font-cormorant font-300 italic text-[22px] text-[#9DA8B7] max-w-2xl reveal-text">
-            Track up to 20 local or national competitors. Receive instant alerts when they acquire new stock, drop a price, or sell a vehicle you're competing against.
+            Track up to 20 local or national competitors. Receive instant alerts when they acquire new stock, drop a price, or sell a vehicle you&apos;re competing against.
           </p>
         </div>
       </section>
@@ -55,7 +55,7 @@ export default function CompetitorMonitoringPage() {
         <div className="max-w-container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20">
           <div className="lg:col-span-5">
             <h2 className="font-syne font-700 text-[32px] lg:text-[44px] text-[#EDE8DC] mb-12 leading-tight">
-              Don't get caught out on price.
+              Don&apos;t get caught out on price.
             </h2>
             <div className="space-y-10">
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
@@ -67,7 +67,7 @@ export default function CompetitorMonitoringPage() {
               <div className="p-8 border border-[#252B37] bg-[#07080B]/50 rounded-[2px]">
                 <h3 className="font-syne font-700 text-[18px] text-[#39FF14] mb-4 uppercase tracking-widest">Stock Velocity Tracking</h3>
                 <p className="font-cormorant font-300 text-[18px] text-[#9DA8B7] leading-relaxed">
-                  See exactly how many days a competitor's vehicles sit on the forecourt before selling. Learn from their slow movers to optimize your own buying.
+                  See exactly how many days a competitor&apos;s vehicles sit on the forecourt before selling. Learn from their slow movers to optimize your own buying.
                 </p>
               </div>
             </div>
